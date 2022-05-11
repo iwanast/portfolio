@@ -1,0 +1,46 @@
+@import "_project.scss";
+@import "_about.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+:root {
+  --color-white: #FAFBFB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: nunitoFont;
+
+  button {
+    cursor: pointer;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  background: #8DB8C9;
+  background-size: cover;
+  background-position: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding-top: 10rem;
+  // background-image: url("/public/images/thehillsbakgrundfinal1.png");
+  // background-size: contain;
+  // background-position:center;
+  // background-repeat:repeat-x;
+}
