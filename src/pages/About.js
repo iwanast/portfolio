@@ -3,8 +3,8 @@
 export const About = () => {
 
   return (
-    <div>
+    <main>
       <h2>About Me</h2>
-    </div>
+    </main>
   );
 }

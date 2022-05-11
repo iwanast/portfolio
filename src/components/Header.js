@@ -1,9 +1,9 @@
-
+import { Nav } from "./index"
 export const Header = () => {
 
   return(
     <header>
-      Header
+      <Nav />
     </header>
   );
 }
