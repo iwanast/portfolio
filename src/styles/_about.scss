@@ -1,0 +1,22 @@
+.wrapper-content-main-about{
+  margin: 16px auto;
+  padding: 54px;
+  width: calc(0.75*100vw);
+  border: 1px solid var(--color-border-light-grey);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  div{
+    width: calc(0.3*100vw);
+    height: auto;
+    img{
+      object-fit: cover;
+      width: calc(0.3*100vw);
+      height: auto;
+    }
+  }
+}
