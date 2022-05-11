@@ -1,9 +1,14 @@
-import Router from "./Router"
+import { Router } from "./Router"
+import { Header, Footer } from "./components/index"
 
 
 function App() {
   return (
-    <Router />
+    <>
+      <Header />
+      <Router />
+      <Footer />
+    </>
   );
 }
 

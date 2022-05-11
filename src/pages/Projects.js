@@ -4,7 +4,7 @@ import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
 import { SiMongodb as MongodbIcon } from "react-icons/si";
 
 
-const Projects = () => {
+export const Projects = () => {
 
   const myProjects = [
     {
@@ -21,9 +21,9 @@ const Projects = () => {
     {
       id : 201,
       title : "Marvel Quiz",
-      date : 2021.10,
-      description : "Second project in HyperIsland where we worked as a group to deepen our knowledge of HTML, SASS, JavaScript and did get to work with LocalStorage and Firestore",
-      toolsIcons : [<Html5Icon/>, <SassIcon/>, <JavascriptIcon/>],
+      date : 2021.11,
+      description : "Third project in HyperIsland where we worked as a group to deepen our knowledge of HTML, SASS, JavaScript and did get to work with LocalStorage and Firestore",
+      toolsIcons : [<Html5Icon/>, <SassIcon/>, <JavascriptIcon/>, ],
       deployedlink : "https://iwanast.github.io/pomodoro/",
       githubLink : "https://github.com/iwanast/pomodoro",
       picture : ""
@@ -32,10 +32,9 @@ const Projects = () => {
   ]
 
   return (
-    <div>
+    <main>
+      <h1>PORTFOLIO Iwana Städeli</h1>
       <h2>Projects</h2>
-    </div>
+    </main>
   );
 }
-
-export default Projects; 

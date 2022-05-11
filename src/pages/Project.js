@@ -1,5 +1,5 @@
 
-const Project = () => {
+export const Project = () => {
 
   return(
     <div>

@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Projects, Project, About} from "./pages/index"
-const Router = () => {
+
+export const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Projects />} />
@@ -8,6 +9,4 @@ const Router = () => {
       <Route path="/about" element={<About />} />
     </Routes>
   );
-}
-
-export default Router; 
+} 
