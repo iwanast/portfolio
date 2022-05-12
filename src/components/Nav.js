@@ -4,10 +4,10 @@ export const Nav = () => {
 
   return(
     <nav>
-      <div id="logo-name"><Link to="./about">IWANA STÄDELI</Link></div>
+      <div id="logo-name"><Link to="./">IWANA STÄDELI</Link></div>
       <ul>
         <li>
-          <Link to="./">PROJECTS</Link>
+          <Link to="./projects">PROJECTS</Link>
         </li>
         <li> 
           <Link to="./about">ABOUT ME</Link>
