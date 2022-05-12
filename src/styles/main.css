@@ -14,9 +14,8 @@
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -69,9 +68,8 @@
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -236,6 +234,18 @@ footer ul li {
   transition: background-color 0.2s 0s linear;
   opacity: 1;
   text-shadow: 0 0 1em #7272ea;
+}
+
+.wrapper-content-main-about .home-wrapper-img {
+  width: clamp(80px, 30vw, 160px);
+  height: auto;
+}
+
+.wrapper-content-main-about .home-wrapper-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: clamp(80px, 30vw, 160px);
+  height: auto;
 }
 
 :root {
