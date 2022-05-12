@@ -44,6 +44,15 @@
   height: auto;
 }
 
+@media screen and (max-width: 750px) {
+  section:nth-child(even) a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .wrapper-content-main-about {
   margin: 16px auto;
   padding: 54px;
@@ -230,7 +239,7 @@ footer ul li {
 }
 
 :root {
-  --color-white: #FAFBFB;
+  --color-white: hwb(180 98% 2%);
   --color-font-dark: #625a71;
   --color-border-light-grey: rgb(236, 231, 237);
   --color-button-hover-light-blue: #BAC1FF;
@@ -288,7 +297,7 @@ main {
 
 @media screen and (max-width: 608px) {
   main {
-    padding-top: 9rem;
+    padding-top: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
