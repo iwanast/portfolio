@@ -1,3 +1,4 @@
+@import "_projects.scss";
 @import "_project.scss";
 @import "_about.scss";
 @import "_header.scss";
@@ -9,6 +10,7 @@
   --color-font-dark: #625a71; // #190B36
   --color-border-light-grey: rgb(236, 231, 237); // #DEDDE9
   --color-button-hover-light-blue: #BAC1FF;
+  --color-hover-blue: rgb(114, 114, 234);
 }
 
 * {

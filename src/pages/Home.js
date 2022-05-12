@@ -6,9 +6,10 @@ export const Home = () => {
       <h2>Me in a nutshell</h2>
       <div className="wrapper-content-main-about">
         <div className="home-wrapper-img">
-          <img src="../portrait.jpg" alt="Portrait"/>
+          <img src="../avatar.png" alt="Portrait"/>
         </div>
           <div>
+            <br />
           <h3>Frontend Developer Student</h3>
           <p>I love to work with people and reach goals together</p>
           <br />
