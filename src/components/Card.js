@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const Card = ({myProjects}) => {
 
   const content = myProjects.map((project) => { 
-    if(project.id % 2 === 0){
+    if(project.id % 2 != 0){
       return(<section className="wrapper-card">
       <Link to={`/project/${project.id}`}>
         <div className="wrapper-img">

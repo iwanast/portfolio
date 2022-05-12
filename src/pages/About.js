@@ -11,7 +11,9 @@ export const About = () => {
           <img src="../portrait.jpg" alt="Portrait"/>
         </div>
         <div>
-          <p>About me I can say things like: ....</p>
+          <p>Mein Name ist Iwana Städeli und ich bin Frontend Developer Studentin in Schweden. Ich ziehe im Sommer wieder zurück in die Schweiz und suche ein Praktikum auf 1. Oktober.</p>
+          <br />
+          <p>Ich würde mich gerne vertiefen in JavaScript und React oder einem anderen JavaScript-framework. Wir haben erst gerade eine API mit Express und Mongodb aufgesetzt und backend scheint mir seit dem auch verlockend. Falls es im Praktikum auch die Möglichkeit gäbe mehr Einblick darin zu gewinnen wäre dies ein Vorteil.</p>
         </div>
     
       </div>

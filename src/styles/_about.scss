@@ -1,7 +1,7 @@
 .wrapper-content-main-about{
   margin: 16px auto;
   padding: 54px;
-  width: calc(0.75*100vw);
+  width: clamp(200px, 75vw, 800px); // IF CHANGED, CHANGE IN PROJECT AS WeLL
   border: 1px solid var(--color-border-light-grey);
   display: flex;
   flex-direction: row;
@@ -9,13 +9,15 @@
   align-content: center;
   justify-content: space-between;
   align-items: center;
-
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
   div{
-    width: calc(0.3*100vw);
+    width: clamp(100px, 30vw, 300px); // IF CHANGE; CHANGE AS WELL IN PROJECT
     height: auto;
     img{
       object-fit: cover;
-      width: calc(0.3*100vw);
+      width: clamp(100px, 30vw, 300px); // IF CHANGE; CHANGE AS WELL IN PROJECT
       height: auto;
     }
   }

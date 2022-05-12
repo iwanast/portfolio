@@ -18,8 +18,7 @@ function App() {
       toolsIcons : [<Html5Icon/>, <SassIcon/>, <JavascriptIcon/>],
       deployedlink : "https://iwanast.github.io/pomodoro/",
       githubLink : "https://github.com/iwanast/pomodoro",
-      picture : "../logo512.png"
-
+      picture : "../pomodoro.png"
     },
     {
       id : 2,
@@ -30,8 +29,7 @@ function App() {
       toolsIcons : [<Html5Icon/>, <SassIcon/>, <JavascriptIcon/>, <FirebaseIcon />],
       deployedlink : "iwanast.github.io/marvel-quiz/",
       githubLink : "https://github.com/iwanast/marvel-quiz",
-      picture : "../logo512.png"
-
+      picture : "../marvel.png"
     }
   ]
 

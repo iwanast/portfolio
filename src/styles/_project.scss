@@ -1,29 +1,32 @@
 .wrapper-content-main-projects{
-  
-  section{
-    a{
+  section {
+    a {
       margin: 16px auto;
-  padding: 54px;
-  width: calc(0.75*100vw);
-  border: 1px solid var(--color-border-light-grey);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
+      padding: 54px;
+      width: clamp(200px, 75vw, 800px); // TAKE FROM HERE FOR ABOUT AS WELL
+      border: 1px solid var(--color-border-light-grey);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      @media screen and (max-width: 750px) {
+        flex-direction: column;
+      }
 
-  div{
-    width: calc(0.3*100vw);
-    height: auto;
-    img{
-      object-fit: cover;
-      width: calc(0.3*100vw);
-      height: auto;
-    }
-  }
-    }
+      div {
+        //width: calc(0.3*100vw);
+        width: clamp(100px, 30vw, 300px); // TAKE FROM HERE TO ABOUT AS WELL
+        height: auto;
 
+        img {
+          object-fit: cover;
+          width: clamp(100px, 30vw, 300px);
+          height: auto;
+        }
+      }
+    }
   }
 }
