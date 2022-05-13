@@ -14,19 +14,23 @@ header {
     flex-direction: column;
     }
 
-    div {
+    #logo-name{
       font-size: clamp(17px, 1.5rem, 24px);
       font-weight: bold;
       letter-spacing: 0.3em;
       margin: 8px;
-
+      transition: text-shadow 0.2s linear;
+      
       a {
         display: inline-block;
         text-decoration: none;
       }
-      a:hover {
-        transform: translate(0,-3px);
-      }
+    }
+    #logo-name:hover {
+      transform: translate(0,-3px);
+      transition: text-shadow 0.2s linear;
+      opacity: 1;
+      text-shadow: 0 0 1.3em var(--color-hover-blue);
     }
     
     ul {
@@ -54,9 +58,7 @@ header {
         transform: translate(0,-3px);
         transition: opacity, text-shadow 0.2s linear;
         opacity: 1;
-        text-shadow:  0 0 1em var(--color-hover-blue);
-        //background-color: rgb(241, 225, 255);
-        //background-image: linear-gradient(rgb(201, 201, 29), rgb(113, 113, 152));
+        text-shadow:  0 0 1.3em var(--color-hover-blue);
       }
     }  
   }

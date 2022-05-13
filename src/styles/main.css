@@ -131,7 +131,7 @@
   -webkit-transition: text-shadow, opacity 0.2s 0s linear;
   transition: text-shadow, opacity 0.2s 0s linear;
   opacity: 1;
-  text-shadow: 0 0 1em var(--color-hover-blue);
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
 }
 
 .wrapper-content-main-about {
@@ -211,21 +211,27 @@ header nav {
   }
 }
 
-header nav div {
+header nav #logo-name {
   font-size: clamp(17px, 1.5rem, 24px);
   font-weight: bold;
   letter-spacing: 0.3em;
   margin: 8px;
+  -webkit-transition: text-shadow 0.2s linear;
+  transition: text-shadow 0.2s linear;
 }
 
-header nav div a {
+header nav #logo-name a {
   display: inline-block;
   text-decoration: none;
 }
 
-header nav div a:hover {
+header nav #logo-name:hover {
   -webkit-transform: translate(0, -3px);
           transform: translate(0, -3px);
+  -webkit-transition: text-shadow 0.2s linear;
+  transition: text-shadow 0.2s linear;
+  opacity: 1;
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
 }
 
 header nav ul {
@@ -273,7 +279,7 @@ header nav ul a:hover {
   -webkit-transition: opacity, text-shadow 0.2s linear;
   transition: opacity, text-shadow 0.2s linear;
   opacity: 1;
-  text-shadow: 0 0 1em var(--color-hover-blue);
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
 }
 
 footer {
@@ -326,7 +332,7 @@ footer ul li {
   -webkit-transition: text-shadow, opacity 0.2s 0s linear;
   transition: text-shadow, opacity 0.2s 0s linear;
   opacity: 1;
-  text-shadow: 0 0 1em var(--color-hover-blue);
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
 }
 
 .wrapper-content-main-about .home-wrapper-img {
