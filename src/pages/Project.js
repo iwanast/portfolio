@@ -24,7 +24,7 @@ return (<main>
           {project.toolsIcons && <h3 id="projects-icons">Tools</h3>}
           {project.toolsIcons && <span id="projects-icons">{project.toolsIcons}</span>}
         </div>
-        <Link to="./projects">Other projects</Link>
+        <Link to="/projects">Other projects</Link>
     </section>
     </div>
     </main>)
