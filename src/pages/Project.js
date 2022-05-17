@@ -1,9 +1,14 @@
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export const Project = ({ myProjects }) => {
  const myId = parseInt(useParams().id);
   const project = myProjects.find(project => ( project.id === myId))
   console.log(project)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 return (<main>
   <h1>PORTFOLIO</h1>
@@ -21,7 +26,7 @@ return (<main>
           {project.longDescription && <p>{project.longDescription.description}</p>}
           {project.longDescription && <h3>Learnings</h3>}
           {project.longDescription && <p>{project.longDescription.learnings}</p>}
-          {project.toolsIcons && <h3 id="projects-icons">Tools</h3>}
+          {project.toolsIcons && <h3>Tools</h3>}
           {project.toolsIcons && <span id="projects-icons">{project.toolsIcons}</span>}
         </div>
         <Link to="/projects">Other projects</Link>

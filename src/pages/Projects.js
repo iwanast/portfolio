@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Card } from "../components/index";
 
 export const Projects = ({ myProjects}) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <main>

@@ -50,3 +50,27 @@
     box-shadow: 0 0 1em var(--color-hover-blue);     
   }
 }
+
+#project-date{
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  padding-bottom: 8px;
+}
+#projects-icons{
+  display: block;
+  margin: 12px 0;
+
+
+  svg{
+  width: 2.5em;
+  height: 1.8em;
+  margin-top: 2px;
+  padding: 0 4px;
+  }
+    i.fa-brands{
+    font-size: 1.7em;
+    padding: 0 4px;
+    }
+
+}
