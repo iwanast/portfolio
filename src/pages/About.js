@@ -1,10 +1,10 @@
-
+import { H1 } from "../components"
 
 export const About = () => {
 
   return (
     <main>
-      <h1>PORTFOLIO</h1>
+      <H1 />
       <h2>About Me</h2>
       <div className="wrapper-content-main-about">
         <div>

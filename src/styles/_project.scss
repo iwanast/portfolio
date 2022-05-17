@@ -18,6 +18,7 @@
         //width: calc(0.3*100vw);
         width: clamp(100px, 30vw, 700px); // TAKE FROM HERE TO ABOUT AS WELL
         height: auto;
+        text-align: center;
 
         img {
           object-fit: cover;
@@ -28,6 +29,9 @@
         a {
           transition: text-shadow, opacity 0.2s 0s linear;
           opacity: 0.7;
+          padding: 0 8px;
+          font-size: 1.7em;
+          text-shadow:  0 0 1em white;
         }
         a:hover {
           transform: translate(0,-3px);

@@ -4,7 +4,7 @@ export const Nav = () => {
 
   return(
     <nav>
-      <div id="logo-name"><Link to="./">IWANA STÄDELI</Link></div>
+      <div id="logo-name"><Link to="./">IWANA STÄD<span className="title-letter">E</span>LI</Link></div>
       <ul>
         <li>
           <Link to="./projects">PROJECTS</Link>

@@ -18,7 +18,7 @@ export function App() {
         title: "Secondhand e-shop for books",
         brief: "Create an API with MongoDB and Express for a shopping store online where (1) there is at least one way for customers to interact with their new API, (2) customers should be able to find available products, (3) customers should be able to create a shopping cart, (4) it should be possible to create an order with a shopping cart AND a single item and (5) workers at the store should be able to mark orders as packed and shipped.",
         timeframe: "Four weeks",
-        description: "First I decided upon the structur of the database and what would be needed for the project on paper. Then I set-up the basic structure for the shop-app and the backend running on the Server. I implementet the different features step by step and used Hooks such as State, Effect, Context and Reducer for the frontend. I developed a basic REST API for the backend.",
+        description: "First I decided upon the structur of the database and what would be needed for the project on paper. Then I set-up the basic structure for the shop-app and the backend running on the Server. I implemented the different features step by step and used Hooks such as useState, useEffect, useContext and useReducer for the frontend. I developed a basic REST API for the backend.",
         learnings: "Learning data interactions and setting up an API, learning MongoDB and Express and more react.js"
       },
       toolsIcons : [<MongodbIcon key="mongo"/>, <SassIcon key="sass"/>, <ReactIcon key="react>"/>, <i key="node" className="fa-brands fa-node-js"></i>],

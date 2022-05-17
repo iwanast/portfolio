@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { H1 } from "../components"
 
 export const Home = () => {
 
@@ -8,7 +9,7 @@ export const Home = () => {
 
   return(
     <main>
-      <h1>PORTFOLIO</h1>
+      <H1 />
       <h2>Me in a nutshell</h2>
       <div className="wrapper-content-main-about">
         <div className="home-wrapper-img">

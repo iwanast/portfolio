@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: 'Noctis';
+  src: url("/public/fonts/Noctis-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noctis';
+  src: url("/public/fonts/Noctis-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noctis';
+  src: url("/public/fonts/Noctis-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noctis';
+  src: url("/public/fonts/Noctis-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noctis';
+  src: url("/public/fonts/Noctis-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .wrapper-content-main-projects section {
   -webkit-transition: text-shadow, opacity 0.2s 0s linear;
   transition: text-shadow, opacity 0.2s 0s linear;
@@ -134,6 +175,7 @@
 .wrapper-content-main-project section div {
   width: clamp(100px, 30vw, 700px);
   height: auto;
+  text-align: center;
 }
 
 .wrapper-content-main-project section div img {
@@ -147,6 +189,9 @@
   -webkit-transition: text-shadow, opacity 0.2s 0s linear;
   transition: text-shadow, opacity 0.2s 0s linear;
   opacity: 0.7;
+  padding: 0 8px;
+  font-size: 1.7em;
+  text-shadow: 0 0 1em white;
 }
 
 .wrapper-content-main-project section div a:hover {
@@ -198,7 +243,7 @@
 .wrapper-content-main-about div img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: clamp(100px, 30vw, 300px);
+  width: clamp(100px, 25vw, 300px);
   height: auto;
 }
 
@@ -236,9 +281,6 @@ header nav {
 }
 
 header nav #logo-name {
-  font-size: clamp(17px, 1.5rem, 24px);
-  font-weight: bold;
-  letter-spacing: 0.3em;
   margin: 8px;
   -webkit-transition: text-shadow 0.2s linear;
   transition: text-shadow 0.2s linear;
@@ -247,6 +289,10 @@ header nav #logo-name {
 header nav #logo-name a {
   display: inline-block;
   text-decoration: none;
+  font-family: "Noctis";
+  font-size: clamp(17px, 1.5em, 24px);
+  font-weight: bold;
+  letter-spacing: 0.25em;
 }
 
 header nav #logo-name:hover {
@@ -292,8 +338,10 @@ header nav ul li a {
   font-size: clamp(17px, 1.5rem, 20px);
   font-weight: 700;
   text-decoration: none;
-  -webkit-transition: opacity, text-shadow 0.2s linear;
-  transition: opacity, text-shadow 0.2s linear;
+  -webkit-transition: opacity, text-shadow 0.2s linear, -webkit-transform;
+  transition: opacity, text-shadow 0.2s linear, -webkit-transform;
+  transition: transform, opacity, text-shadow 0.2s linear;
+  transition: transform, opacity, text-shadow 0.2s linear, -webkit-transform;
   opacity: 0.7;
 }
 
@@ -372,7 +420,7 @@ footer ul li {
 }
 
 :root {
-  --color-white: hwb(180 98% 2%);
+  --color-white: rgb(250, 250, 250);
   --color-font-dark: #625a71;
   --color-border-light-grey: rgb(236, 231, 237);
   --color-button-hover-light-blue: #BAC1FF;
@@ -384,7 +432,8 @@ footer ul li {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'libre-franklin-regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
   color: var(--color-font-dark);
 }
 
@@ -392,13 +441,43 @@ footer ul li {
   cursor: pointer;
 }
 
-* h1, * h2, * h3 {
-  font-family: 'calibri-bold', sans-serif;
+* h1 {
+  letter-spacing: 0.2em;
+  font-size: clamp(1.5em, 2em, 3em);
+  font-family: 'Noctis', sans-serif;
+  font-weight: 900;
   margin: 8px auto;
 }
 
-* p {
-  font-family: 'calibri-regular', sans-serif;
+* .title-letter {
+  display: inline-block;
+  font-family: "Noctis";
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateY(0px) rotate(0);
+          transform: translateY(0px) rotate(0);
+}
+
+* .title-letter:hover {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: translateY(-10px) rotate(-10deg);
+          transform: translateY(-10px) rotate(-10deg);
+}
+
+* h2, * h3 {
+  font-family: 'Noctis', sans-serif;
+  font-weight: bold;
+  margin: 8px auto;
+}
+
+* p, * a {
+  font-family: 'Noctis', sans-serif;
+  font-weight: normal;
 }
 
 body {

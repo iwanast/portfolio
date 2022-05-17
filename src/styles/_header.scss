@@ -15,15 +15,16 @@ header {
     }
 
     #logo-name{
-      font-size: clamp(17px, 1.5rem, 24px);
-      font-weight: bold;
-      letter-spacing: 0.3em;
       margin: 8px;
       transition: text-shadow 0.2s linear;
       
       a {
         display: inline-block;
         text-decoration: none;
+        font-family: "Noctis";
+        font-size: clamp(17px, 1.5em, 24px);
+        font-weight: bold;
+        letter-spacing: 0.25em;
       }
     }
     #logo-name:hover {
@@ -51,7 +52,7 @@ header {
         font-size: clamp(17px, 1.5rem, 20px);
         font-weight: 700;
         text-decoration: none;
-        transition: opacity, text-shadow 0.2s linear;
+        transition: transform, opacity, text-shadow 0.2s linear;
         opacity: 0.7;
       }
       a:hover {

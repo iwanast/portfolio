@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Card } from "../components/index";
+import { Card, H1 } from "../components";
 
 export const Projects = ({ myProjects}) => {
 
@@ -9,8 +9,10 @@ export const Projects = ({ myProjects}) => {
 
   return (
     <main>
-      <h1>PORTFOLIO</h1>
-      <h2>Projects</h2>
+      <div className="title">
+      <H1 />
+      </div>
+      <h2>PROJECTS</h2>
       <div className="wrapper-content-main-projects">
         <Card myProjects={myProjects} />
       </div>

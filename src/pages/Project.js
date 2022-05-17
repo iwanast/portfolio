@@ -1,25 +1,30 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { H1 } from "../components"
 
 export const Project = ({ myProjects }) => {
  const myId = parseInt(useParams().id);
   const project = myProjects.find(project => ( project.id === myId))
-  console.log(project)
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-return (<main>
-  <h1>PORTFOLIO</h1>
-  {project.longDescription.title && <h2 id="project-title">Project: {project.longDescription.title}</h2>}      <div className="wrapper-content-main-project">
-        <section className="wrapper-card">
+return (
+  <main>
+    <H1 />
+    {project.longDescription.title && <h2 id="project-title">Project: {project.longDescription.title}</h2>}      
+    <div className="wrapper-content-main-project">
+      <section className="wrapper-card">
         <div className="wrapper-img">
           <img src={project.picture && project.picture} alt="Projects snapshot" />
         </div>
         <div className="wrapper-card-content">
+          {project.longDescription && <a className="link-sources" href={project.githubLink}><i className="fab fa-github"></i></a>}
+          {project.longDescription && <a className="link-sources" href={project.deployedLink}>Live</a>}
           {project.longDescription && <h3>Timeframe</h3>}
-          {project.longDescription && <p>{project.longDescription.timeframe}, presentation {project.date} - <a href={project.githubLink}><i className="fab fa-github"></i></a> and  <a href={project.deployedLink}>Live</a> </p>} 
+          {project.longDescription && <p>{project.longDescription.timeframe}, presentation {project.date}</p>} 
+         
           {project.longDescription && <h3>Brief</h3>}
           {project.longDescription && <p>{project.longDescription.brief}</p>}
           {project.longDescription && <h3>Description</h3>}
@@ -30,7 +35,7 @@ return (<main>
           {project.toolsIcons && <span id="projects-icons">{project.toolsIcons}</span>}
         </div>
         <Link to="/projects">Other projects</Link>
-    </section>
+      </section>
     </div>
-    </main>)
+  </main>)
 }
