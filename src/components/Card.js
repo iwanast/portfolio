@@ -4,9 +4,9 @@ export const Card = ({myProjects}) => {
 
   return(
     <>
-    {myProjects.map((project, index) => { 
-      return (<section key={index} className="wrapper-card">
-        <Link key={project.id.toString()} to={`/project/${project.id}`}>
+    {myProjects.map((project) => { 
+      return (<section key={project.id.toString()} className={`wrapper-card section${project.id.toString()}`}>
+        <Link to={`/project/${project.id}`}>
           <div className="wrapper-img">
             <img src={project.picture && project.picture} alt="Projects snapshot" />
           </div>
