@@ -15,15 +15,11 @@ export const Home = () => {
         <div className="home-wrapper-img">
           <img src="../avatar.png" alt="Portrait"/>
         </div>
-          <div>
-            <br />
+        <div>
           <h3>Frontend Developer Student</h3>
-          <p>I love to work with people and reach goals together</p>
-          <br />
+          <p>Love to work with people and reach goals together</p>
           <p>Respectful, active listener and focused </p>
-          <br />
           <p>Looking for an internship from 10/2022</p>
-          <br />
         </div>
       </div>
     </main>
