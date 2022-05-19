@@ -64,7 +64,7 @@ export function App() {
       id : 3,
       title : "MARVEL QUIZ",
       date : 2021.11,
-      shortDescription : "Third project in HyperIsland where we worked as a group to deepen our knowledge of HTML, SASS, JavaScript and did get to work with LocalStorage and Firestore",
+      shortDescription : "Third project in HyperIsland where we worked to deepen our knowledge of HTML, SASS, JavaScript and did get to work with LocalStorage and Firestore",
       longDescription : {
         title: "The Ultimate Marvel Fan Quiz",
         brief: "Group project to create a quiz game that incorporates Firebase.",
@@ -98,7 +98,7 @@ export function App() {
       id : 1,
       title : "POMODORO",
       date : 2021.09,
-      shortDescription : "First project in HyperIsland where I started to use JavaScript and Sass",
+      shortDescription : "First project in HyperIsland where we learned the fundamentals and I started to use JavaScript and Sass and deepend my knowledge of HTML.",
       longDescription : {
         title: "PomoDoro, a timer for focus-time",
         brief: "Individual project which should include HTML and CSS (or SASS).",

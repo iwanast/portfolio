@@ -16,6 +16,7 @@ export const Projects = ({ myProjects}) => {
       <div className="wrapper-content-main-projects">
         <Card myProjects={myProjects} />
       </div>
+      <div id="after-projects"></div>
     </main>
   );
 }
