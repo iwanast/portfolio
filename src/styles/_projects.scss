@@ -22,15 +22,16 @@
       text-decoration: none;
       @media screen and (max-width: 750px) {
         flex-direction: column;
+        padding: 54px 8px;
       }
 
       div {
-        width: clamp(100px, 30vw, 300px); // TAKE FROM HERE TO ABOUT AS WELL
+        width: clamp(220px, 30vw, 300px); // TAKE FROM HERE TO ABOUT AS WELL
         height: auto;
 
         img {
           object-fit: cover;
-          width: clamp(100px, 30vw, 300px);
+          width: clamp(220px, 30vw, 300px);
           height: auto;
         }
       }
