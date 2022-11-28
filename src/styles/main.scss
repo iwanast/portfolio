@@ -35,7 +35,7 @@
   font-display: swap;
 }
 
-
+@import "_background.scss";
 @import "_projects.scss";
 @import "_project.scss";
 @import "_about.scss";
@@ -96,7 +96,6 @@
 body {
   min-height: 100%;
   width: 100%;
-  background: var(--color-white); //#8DB8C9;
 }
 
 #root {

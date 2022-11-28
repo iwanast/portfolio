@@ -19,7 +19,7 @@ export const Home = () => {
           <h3>Frontend Developer Student</h3>
           <p>Love to work with people and reach goals together</p>
           <p>Respectful, active listener and focused </p>
-          <p>Looking for an internship from 10/2022</p>
+          <p>Looking for a junior position from april/2023</p>
         </div>
       </div>
     </main>
