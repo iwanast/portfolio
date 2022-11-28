@@ -11,7 +11,7 @@
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-
+    background-color: var(--color-white);
     div {
       width: clamp(220px, 30vw, 700px); // TAKE FROM HERE TO ABOUT AS WELL
       height: auto;
