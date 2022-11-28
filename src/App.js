@@ -4,7 +4,7 @@ import { DiCss3 as CssIcon, DiReact as ReactIcon, DiSass as SassIcon } from "rea
 import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
 import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon} from "react-icons/si";
 import { Router } from "./Router"
-import { Header, Footer } from "./components/index"
+import { Header, Footer, Background } from "./components/index"
 
 export function App() {
 
@@ -120,6 +120,7 @@ export function App() {
 
   return (
     <>
+      <Background />
       <Header />
       <Router myProjects={myProjects}/>
       <Footer />
