@@ -1,2 +1,4 @@
-My portfolio :purple-heart
+My portfolio 💜
+
+Last updated nov 2022
 
