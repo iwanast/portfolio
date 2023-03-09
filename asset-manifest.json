@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.05885b47.css",
+    "main.js": "/portfolio/static/js/main.4bdd5879.js",
+    "static/media/nebula.png": "/portfolio/static/media/nebula.582f9afef1515cb08fa8.png",
+    "static/media/starsWater.png": "/portfolio/static/media/starsWater.b24e1be101fac5fd1f05.png",
+    "static/media/starsf3f9c1.png": "/portfolio/static/media/starsf3f9c1.9e341be45b446180056d.png",
+    "static/media/Noctis-LightItalic.woff": "/portfolio/static/media/Noctis-LightItalic.ba7dfb0b429dca277812.woff",
+    "static/media/Noctis-Bold.woff": "/portfolio/static/media/Noctis-Bold.95eba5eb5c87db53a877.woff",
+    "static/media/Noctis-Heavy.woff": "/portfolio/static/media/Noctis-Heavy.1c4a83b772ffaaf41e0a.woff",
+    "static/media/Noctis-Regular.woff": "/portfolio/static/media/Noctis-Regular.1df5caa882ad93e18368.woff",
+    "static/media/Noctis-ThinItalic.woff": "/portfolio/static/media/Noctis-ThinItalic.57810a009ef5393c38d1.woff",
+    "index.html": "/portfolio/index.html",
+    "main.05885b47.css.map": "/portfolio/static/css/main.05885b47.css.map",
+    "main.4bdd5879.js.map": "/portfolio/static/js/main.4bdd5879.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05885b47.css",
+    "static/js/main.4bdd5879.js"
+  ]
+}
