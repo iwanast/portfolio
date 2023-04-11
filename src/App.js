@@ -12,7 +12,7 @@ export function App() {
     {
       id : 8,
       title : "E-COMMERCE",
-      date : 2022.03,
+      date : "2022.03",
       shortDescription : "Individual Project to build an e-commerce with the MERN-stack",
       longDescription : {
         title: "Secondhand e-shop for books",
@@ -24,12 +24,12 @@ export function App() {
       toolsIcons : [<MongodbIcon key="mongo"/>, <SassIcon key="sass"/>, <ReactIcon key="react>"/>, <i key="node" className="fa-brands fa-node-js"></i>],
       deployedLink : "https://shopping-secondhand-bookshop.netlify.app/",
       githubLink : "https://github.com/iwanast/shopping",
-      picture : "../shopping.png"
+      picture : "/shopping.png"
     },
     {
       id : 6,
       title : "SWEDISH RADIO API",
-      date : 2022.01,
+      date : "2022.01",
       shortDescription : "Refactoring the earlier project (JavaScript) with react.js and through this learning the basics of this library.",
       longDescription : {
         title: "Secondhand e-shop for books",
@@ -39,14 +39,14 @@ export function App() {
         learnings: "First I had to learn the basics of react and worked with function components, Hook, react router dom and react player. Then I used create react app to set up the project, included SASS, react-router-dom, react-player and deleted the content under src. I implemented step for step the functions and logic from my previouse project and adapted where needed the fetch for the Sveriges Radio API. Then I published the project to netlify."
       },
       toolsIcons : [<SassIcon key="sass"/>, <ReactIcon key="react"/>, <i key="node" className="fa-brands fa-node-js"></i>],
-      deployedLink : "https://shopping-secondhand-bookshop.netlify.app/",
+      deployedLink : "https://svensk-radio-barn.netlify.app/",
       githubLink : "https://github.com/iwanast/the-first-app-in-react",
-      picture : "../radio.png"
+      picture : "/radio.png" // 
     },
     {
       id : 4,
       title : "FISH GAME",
-      date : 2021.12,
+      date : "2021.12",
       shortDescription : "Building a game with JavaScript and the HTML5 game framework/engine Phaser 3.",
       longDescription : {
         title: "The Fishgame",
@@ -58,12 +58,12 @@ export function App() {
       toolsIcons : [<JavascriptIcon key="js"/>, <FirebaseIcon key="firebase"/>, <i key="node" className="fa-brands fa-node-js"></i>],
       deployedLink : "",
       githubLink : "https://github.com/iwanast/FishGame",
-      picture : "../fishgame.png"
+      picture : "/fishgame.png"
     },
     {
       id : 3,
       title : "MARVEL QUIZ",
-      date : 2021.11,
+      date : "2021.11",
       shortDescription : "Third project in HyperIsland where we worked to deepen our knowledge of HTML, SASS, JavaScript and did get to work with LocalStorage and Firestore",
       longDescription : {
         title: "The Ultimate Marvel Fan Quiz",
@@ -75,12 +75,12 @@ export function App() {
       toolsIcons : [<Html5Icon key="html"/>, <SassIcon key="sass"/>, <JavascriptIcon key="js"/>, <FirebaseIcon key="firebase"/>],
       deployedLink : "https://quizaboutmarvel.netlify.app/",
       githubLink : "https://github.com/iwanast/marvel-quiz",
-      picture : "../marvel.png"
+      picture : "/marvel.png"
     },
     {
       id : 2,
       title : "THE WHITE RABBIT",
-      date : 2021.10,
+      date : "2021.10",
       shortDescription : "Second project in Hyper Island where we created an in browser Matrix themed reaction game that incorporates local/session storage.",
       longDescription : {
         title: "The White Rabbit: A Matrix themed reaction speed game",
@@ -92,25 +92,25 @@ export function App() {
       toolsIcons : [<Html5Icon key="html"/>, <SassIcon key="sass"/>, <JavascriptIcon key="js"/>, <FirebaseIcon key="firebase"/>],
       deployedLink : "https://thewhiterabbitgame.netlify.app/",
       githubLink : "https://github.com/iwanast/the-white-rabbit",
-      picture : "../whiterabbit.png"
+      picture : "/whiterabbit.png"
     },
-    {
-      id : 1,
-      title : "POMODORO",
-      date : 2021.09,
-      shortDescription : "First project in HyperIsland where we learned the fundamentals and I started to use JavaScript and Sass and deepend my knowledge of HTML.",
-      longDescription : {
-        title: "PomoDoro, a timer for focus-time",
-        brief: "Individual project which should include HTML and CSS (or SASS).",
-        timeframe: "5 weeks",
-        description: "The idea of a pomodoro is that you estimate your work in time-slots and that you do regular breaks to refresh your brain and to be still functioning after a whole day working. ou can choose in the settings the timeslotes and a theme you want to have to look at or have it in the background.",
-        learnings: "I worked for the first time with JavaScript and did a timer and a customizable theme-chooser and time-setter. I worked with media-queries and loading-time for images and did a json-file for all the different images. I worked with some animations (timer spinning out when reached 0, label coming up when typing in the text-fields, setting-icon)."
-      },
-      toolsIcons : [<Html5Icon key="html"/>, <SassIcon key="sass"/>, <JavascriptIcon key="js"/>],
-      deployedLink : "https://pomodoro-gold.netlify.app/",
-      githubLink : "https://github.com/iwanast/pomodoro",
-      picture : "../pomodoro.png"
-    },
+    // {
+    //   id : 1,
+    //   title : "POMODORO",
+    //   date : "2021.09",
+    //   shortDescription : "First project in HyperIsland where we learned the fundamentals and I started to use JavaScript and Sass and deepend my knowledge of HTML.",
+    //   longDescription : {
+    //     title: "PomoDoro, a timer for focus-time",
+    //     brief: "Individual project which should include HTML and CSS (or SASS).",
+    //     timeframe: "5 weeks",
+    //     description: "The idea of a pomodoro is that you estimate your work in time-slots and that you do regular breaks to refresh your brain and to be still functioning after a whole day working. ou can choose in the settings the timeslotes and a theme you want to have to look at or have it in the background.",
+    //     learnings: "I worked for the first time with JavaScript and did a timer and a customizable theme-chooser and time-setter. I worked with media-queries and loading-time for images and did a json-file for all the different images. I worked with some animations (timer spinning out when reached 0, label coming up when typing in the text-fields, setting-icon)."
+    //   },
+    //   toolsIcons : [<Html5Icon key="html"/>, <SassIcon key="sass"/>, <JavascriptIcon key="js"/>],
+    //   deployedLink : "https://pomodoro-gold.netlify.app/",
+    //   githubLink : "https://github.com/iwanast/pomodoro",
+    //   picture : "/pomodoro.png"
+    // },
   ]
 
   useEffect(()=>{

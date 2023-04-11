@@ -8,7 +8,7 @@ export const Card = ({myProjects}) => {
       return (<section key={project.id.toString()} className={`wrapper-card section${project.id.toString()}`}>
         <Link to={`/project/${project.id}`}>
           <div className="wrapper-img">
-            <img src={project.picture && project.picture} alt="Projects snapshot" />
+            <img src={project.picture &&  process.env.PUBLIC_URL + project.picture} alt="Projects snapshot" />
           </div>
           <div className="wrapper-card-content">
             {project.title && <h3 id="project-title">{project.title}</h3>}

@@ -1,4 +1,5 @@
 import { H1 } from "../components"
+import portrait from "./../assets/images/portrait.jpg"
 
 export const About = () => {
 
@@ -8,7 +9,7 @@ export const About = () => {
       <h2>About Me</h2>
       <div className="wrapper-content-main-about">
         <div>
-          <img src="../portrait.jpg" alt="Portrait"/>
+          <img src={portrait} alt="Portrait"/>
         </div>
         <div>
           <p>My name is Iwana Städeli and I am a frontend developer student in Hyper Island Sweden who has moved back to Switzerland september 2022 for an internship. I am open for a junior position starting april 2023.</p>

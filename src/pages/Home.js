@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { H1 } from "../components"
+import avatar from "./../assets/images/avatar.png"
 
 export const Home = () => {
 
@@ -13,7 +14,7 @@ export const Home = () => {
       <h2>Me in a nutshell</h2>
       <div className="wrapper-content-main-about">
         <div className="home-wrapper-img">
-          <img src="../avatar.png" alt="Portrait"/>
+          <img src={avatar} alt="My avatar"/>
         </div>
         <div>
           <h3>Frontend Developer Student</h3>

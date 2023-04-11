@@ -9,24 +9,24 @@
   display: block;
 }
 .backgroundStars {
-  // background: var(--color-white) url(../images/yellow_pricks.png) repeat top center;
-  background: transparent url(../images/starsWater.png) repeat top center;
+  // background: var(--color-white) url(../assets/images/yellow_pricks.png) repeat top center;
+  background: transparent url(../assets/images/starsWater.png) repeat top center;
   animation: space 325s cubic-bezier(0.25,0.5,0.25,0.5) infinite;
   z-index: -3;
 }
 .backgroundStars2 {
   // background: var(--color-white) url(../images/yellow_pricks.png) repeat top center;
-  background: #ffffff  url(../images/starsf3f9c1.png) repeat top center;
+  background: #ffffff  url(../assets/images/starsf3f9c1.png) repeat top center;
   animation: space2 325s linear infinite;
   z-index: -4;
 }
 .backgroundWhite {
-  background: transparent url(../images/alphawhite.png) repeat top center;
+  background: transparent url(../assets/images/alphawhite.png) repeat top center;
   animation: stargazing 500s linear infinite;
   z-index: -2;
 }
 .backgroundDist {
-  background: transparent url(../images/nebula.png) repeat top center;
+  background: transparent url(../assets/images/nebula.png) repeat top center;
   z-index: -1;
   opacity: 0.15;
 }

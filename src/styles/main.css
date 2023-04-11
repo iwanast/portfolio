@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "Noctis";
-  src: url("/public/fonts/Noctis-Bold.woff") format("woff");
+  src: url("./../assets/fonts/Noctis-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Noctis";
-  src: url("/public/fonts/Noctis-LightItalic.woff") format("woff");
+  src: url("./../assets/fonts/Noctis-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Noctis";
-  src: url("/public/fonts/Noctis-ThinItalic.woff") format("woff");
+  src: url("./../assets/fonts/Noctis-ThinItalic.woff") format("woff");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Noctis";
-  src: url("/public/fonts/Noctis-Regular.woff") format("woff");
+  src: url("./../assets/fonts/Noctis-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Noctis";
-  src: url("/public/fonts/Noctis-Heavy.woff") format("woff");
+  src: url("./../assets/fonts/Noctis-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -46,25 +46,25 @@
 }
 
 .backgroundStars {
-  background: transparent url(../images/starsWater.png) repeat top center;
+  background: transparent url(../assets/images/starsWater.png) repeat top center;
   animation: space 325s cubic-bezier(0.25, 0.5, 0.25, 0.5) infinite;
   z-index: -3;
 }
 
 .backgroundStars2 {
-  background: #ffffff url(../images/starsf3f9c1.png) repeat top center;
+  background: #ffffff url(../assets/images/starsf3f9c1.png) repeat top center;
   animation: space2 325s linear infinite;
   z-index: -4;
 }
 
 .backgroundWhite {
-  background: transparent url(../images/alphawhite.png) repeat top center;
+  background: transparent url(../assets/images/alphawhite.png) repeat top center;
   animation: stargazing 500s linear infinite;
   z-index: -2;
 }
 
 .backgroundDist {
-  background: transparent url(../images/nebula.png) repeat top center;
+  background: transparent url(../assets/images/nebula.png) repeat top center;
   z-index: -1;
   opacity: 0.15;
 }
@@ -125,8 +125,7 @@
   transition: text-shadow, opacity 0.2s 0s linear;
   margin-bottom: 200px;
   position: sticky;
-  position: -webkit-sticky;
-  /* Safari */
+  position: -webkit-sticky; /* Safari */
   top: 200px;
   z-index: 3;
   background-color: var(--color-white);
@@ -161,7 +160,8 @@
   height: auto;
 }
 .wrapper-content-main-projects section a div img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: clamp(220px, 30vw, 300px);
   height: auto;
 }
@@ -242,7 +242,8 @@
   text-align: center;
 }
 .wrapper-content-main-project section div img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: clamp(220px, 30vw, 700px);
   height: auto;
 }
@@ -287,7 +288,8 @@
   height: auto;
 }
 .wrapper-content-main-about div img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: clamp(220px, 25vw, 300px);
   height: auto;
 }
@@ -400,7 +402,8 @@ footer ul li {
   height: auto;
 }
 .wrapper-content-main-about .home-wrapper-img img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: clamp(80px, 30vw, 160px);
   height: auto;
 }
@@ -426,7 +429,7 @@ footer ul li {
 }
 * h1 {
   letter-spacing: 0.2em;
-  font-size: clamp(1.5em, 2em, 3em);
+  font-size: 2em;
   font-family: "Noctis", sans-serif;
   font-weight: 900;
   margin: 8px auto;
@@ -474,6 +477,4 @@ main {
   main {
     padding-top: 3rem;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
