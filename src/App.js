@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { AiOutlineHtml5 as Html5Icon } from "react-icons/ai";
-import { DiCss3 as CssIcon, DiReact as ReactIcon, DiSass as SassIcon } from "react-icons/di";
+import {  DiReact as ReactIcon, DiSass as SassIcon } from "react-icons/di"; // DiCss3 as CssIcon,
 import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
 import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon} from "react-icons/si";
 import { Router } from "./Router"
