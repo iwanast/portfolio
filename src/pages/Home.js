@@ -17,10 +17,10 @@ export const Home = () => {
           <img src={avatar} alt="My avatar"/>
         </div>
         <div>
-          <h3>Frontend Developer Student</h3>
+          <h3>Frontend Developer</h3>
           <p>Love to work with people and reach goals together</p>
-          <p>Respectful, active listener and focused </p>
-          <p>Looking for a junior position from april/2023</p>
+          <p>Respectful, active listener and focused</p>
+          <p>Open for a junior developer position</p>
         </div>
       </div>
     </main>

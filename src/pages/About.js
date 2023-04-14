@@ -12,11 +12,11 @@ export const About = () => {
           <img src={portrait} alt="Portrait"/>
         </div>
         <div>
-          <p>I am a newly turned frontend developer from Hyper Island Sweden, living in Winterthur Switzerland. I am open for a junior position starting now.</p>
+          <p>I am a newly graduated Frontend Developer from Hyper Island Sweden, currently residing in Winterthur, Switzerland. I am actively seeking a junior position in this field.</p>
           <br />
-          <p>I love to deepen my knowledge in JavaScript, React.js or in another JavaScript-framework. In one of my projects I did set up an API with express and MongoDB and since then I can see myself as well wanting to know more about backend.</p>
+          <p>I love to deepen my knowledge of JavaScript, React.js or other JavaScript frameworks. In one of my previous projects, I successfully set up an API with Express and MongoDB. This experience has also sparked my curiosity about backend development.</p>
           <br/>
-          <p>With me you will get an openminded, focused and enthusiastic junior, eager to learn more.</p>
+          <p>With me you will get an open-minded, focused and enthusiastic junior developer, which values continuous learning and growth.</p>
         </div>
     
       </div>
