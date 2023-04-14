@@ -7,8 +7,10 @@
     top: 200px;
     z-index: 3;
     background-color: var(--color-white);
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 450px) {
       top: 80px;
+      position: relative;
+      margin-bottom: 80px;
     }
 
     a {
@@ -30,12 +32,12 @@
       }
 
       div {
-        width: clamp(220px, 30vw, 300px); // TAKE FROM HERE TO ABOUT AS WELL
+        width: clamp(200px, 30vw, 300px); // TAKE FROM HERE TO ABOUT AS WELL
         height: auto;
 
         img {
           object-fit: cover;
-          width: clamp(220px, 30vw, 300px);
+          width: clamp(200px, 30vw, 300px);
           height: auto;
         }
       }
@@ -58,6 +60,9 @@
   }
   section:first-child{
     margin-top: 100px;
+    @media screen and (max-width: 450px) {
+      margin-top: 0;
+    }
   }
   section:hover{
     transition: text-shadow, opacity 0.2s 0s linear;
@@ -93,6 +98,9 @@
   height: 35vh;
   @media screen and (max-width: 750px) {
     height: 10vh;
+  }
+  @media screen and (max-width: 450px) {
+    height: 80px;
   }
 }
 

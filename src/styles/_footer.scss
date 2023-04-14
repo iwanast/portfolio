@@ -5,11 +5,17 @@ footer {
   bottom: 0; 
   width: 100%;
   padding: 2rem;
+  @media screen and (max-width: 450px) {
+    padding: 1rem;
+  }
 
   ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+    }
 
     li {
       padding: 0.5rem;
@@ -29,6 +35,13 @@ footer {
       }
     }
 
+    li:nth-child(1), li:nth-child(2) {
+      a {
+        @media screen and (max-width: 450px) {
+          flex-direction: row;
+        }
+      }
+    }
   }
 }
 

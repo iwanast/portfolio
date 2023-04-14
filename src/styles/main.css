@@ -130,9 +130,11 @@
   z-index: 3;
   background-color: var(--color-white);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 450px) {
   .wrapper-content-main-projects section {
     top: 80px;
+    position: relative;
+    margin-bottom: 80px;
   }
 }
 .wrapper-content-main-projects section a {
@@ -156,13 +158,13 @@
   }
 }
 .wrapper-content-main-projects section a div {
-  width: clamp(220px, 30vw, 300px);
+  width: clamp(200px, 30vw, 300px);
   height: auto;
 }
 .wrapper-content-main-projects section a div img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: clamp(220px, 30vw, 300px);
+  width: clamp(200px, 30vw, 300px);
   height: auto;
 }
 .wrapper-content-main-projects section:nth-child(even) a {
@@ -184,6 +186,11 @@
 }
 .wrapper-content-main-projects section:first-child {
   margin-top: 100px;
+}
+@media screen and (max-width: 450px) {
+  .wrapper-content-main-projects section:first-child {
+    margin-top: 0;
+  }
 }
 .wrapper-content-main-projects section:hover {
   transition: text-shadow, opacity 0.2s 0s linear;
@@ -219,6 +226,11 @@
 @media screen and (max-width: 750px) {
   #after-projects {
     height: 10vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  #after-projects {
+    height: 80px;
   }
 }
 
@@ -368,10 +380,20 @@ footer {
   width: 100%;
   padding: 2rem;
 }
+@media screen and (max-width: 450px) {
+  footer {
+    padding: 1rem;
+  }
+}
 footer ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 450px) {
+  footer ul {
+    flex-direction: column;
+  }
 }
 footer ul li {
   padding: 0.5rem;
@@ -387,6 +409,11 @@ footer ul li a:hover {
   transition: text-shadow, opacity 0.2s 0s linear;
   opacity: 1;
   text-shadow: 0 0 1.3em var(--color-hover-blue);
+}
+@media screen and (max-width: 450px) {
+  footer ul li:nth-child(1) a, footer ul li:nth-child(2) a {
+    flex-direction: row;
+  }
 }
 
 .footerIcon, .fas {
@@ -473,7 +500,7 @@ body {
 main {
   height: 100%;
   width: 100%;
-  padding: 2rem 0 100px;
+  padding: 2rem 0 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,5 +508,10 @@ main {
 @media screen and (max-width: 608px) {
   main {
     padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    padding-bottom: 200px;
   }
 }/*# sourceMappingURL=main.css.map */
