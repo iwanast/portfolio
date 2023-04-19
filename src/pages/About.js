@@ -1,5 +1,5 @@
 import { H1 } from "../components"
-import portrait from "./../assets/images/portrait.jpg"
+import portrait from "./../assets/images/Selfy_klein.png"
 
 export const About = () => {
 
