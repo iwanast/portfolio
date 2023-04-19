@@ -2,14 +2,15 @@ import { useEffect } from "react";
 import { AiOutlineHtml5 as Html5Icon } from "react-icons/ai";
 import {  DiReact as ReactIcon, DiSass as SassIcon } from "react-icons/di"; // DiCss3 as CssIcon,
 import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
-import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon, SiRedux as ReduxIcon} from "react-icons/si";
-import { FaAws as AWSIcon } from "react-icons/fa";
+import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon, } from "react-icons/si"; // SiRedux as ReduxIcon
+// import { FaAws as AWSIcon } from "react-icons/fa";
 import { Router } from "./Router"
 import { Header, Footer, Backgrounds } from "./components/index"
 
 export function App() {
 
   const myProjects = [
+    
     {
       id : 8,
       title : "E-COMMERCE",
