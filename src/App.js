@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import { AiOutlineHtml5 as Html5Icon } from "react-icons/ai";
 import {  DiReact as ReactIcon, DiSass as SassIcon } from "react-icons/di"; // DiCss3 as CssIcon,
 import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
-import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon} from "react-icons/si";
+import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon, SiRedux as ReduxIcon} from "react-icons/si";
+import { FaAws as AWSIcon } from "react-icons/fa";
 import { Router } from "./Router"
-import { Header, Footer, Background } from "./components/index"
+import { Header, Footer, Backgrounds } from "./components/index"
 
 export function App() {
 
@@ -21,7 +22,7 @@ export function App() {
         description: "First I decided upon the structur of the database and what would be needed for the project on paper. Then I set-up the basic structure for the shop-app and the backend running on the Server. I implemented the different features step by step and used Hooks such as useState, useEffect, useContext and useReducer for the frontend. I developed a basic REST API for the backend.",
         learnings: "Learning data interactions and setting up an API, learning MongoDB and Express and more react.js"
       },
-      toolsIcons : [<MongodbIcon key="mongo"/>, <SassIcon key="sass"/>, <ReactIcon key="react>"/>, <i key="node" className="fa-brands fa-node-js"></i>],
+      toolsIcons : [<MongodbIcon key="mongo"/>, <SassIcon key="sass"/>, <ReactIcon key="react>"/>],
       deployedLink : "https://shopping-secondhand-bookshop.netlify.app/",
       githubLink : "https://github.com/iwanast/shopping",
       picture : "/shopping.png"
@@ -120,7 +121,7 @@ export function App() {
 
   return (
     <>
-      <Background />
+      <Backgrounds />
       <Header />
       <Router myProjects={myProjects}/>
       <Footer />

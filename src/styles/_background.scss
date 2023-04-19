@@ -1,28 +1,28 @@
 .background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  position:absolute;
   width: 100%;
   height: 100%;
-  display: block;
 }
-.backgroundStars {
+.backgroundStars1 {
   // background: var(--color-white) url(../assets/images/yellow_pricks.png) repeat top center;
   background: transparent url(../assets/images/starsWater.png) repeat top center;
-  animation: space 325s cubic-bezier(0.25,0.5,0.25,0.5) infinite;
+  animation: space 9325s cubic-bezier(0.25,0.5,0.25,0.5) infinite;
   z-index: -3;
 }
 .backgroundStars2 {
   // background: var(--color-white) url(../images/yellow_pricks.png) repeat top center;
   background: #ffffff  url(../assets/images/starsf3f9c1.png) repeat top center;
-  animation: space2 325s linear infinite;
+  animation: space2 1325s linear infinite; 
   z-index: -4;
 }
 .backgroundWhite {
   background: transparent url(../assets/images/alphawhite.png) repeat top center;
-  animation: stargazing 500s linear infinite;
+  animation: stargazing2 250s linear infinite; 
   z-index: -2;
 }
 .backgroundDist {
@@ -36,27 +36,131 @@
   to { background-position: 10000px -5000px; }
 }
 
-@keyframes space {
-  0% { background-position: 0 0;
-  opacity: 0.6;}
-  25% { background-position: -2500px -1250px ;
-    opacity: 0.8;}
-  50% { background-position:  -5000px -2500px;
-  opacity: 1;}
-  75% { background-position: -7500px -3750px  ;
-    opacity: 0.8;}
-  100% { background-position: -10000px -5000px;
-      opacity: 0.6;}
+@keyframes stargazing2 {
+  from { background-position: 10000px -5000px ; }
+  to { background-position: 0 0; }
 }
+
 @keyframes space2 {
   0% { background-position: -1250px -600px;
     opacity: 0.6;}
-    25% { background-position: -2500px -1250px ;
+  25% { background-position: -2500px -1250px ;
+    opacity: 0.8;}
+  50% { background-position:  -5000px -2500px;
+    opacity: 1;}
+  75% { background-position: -7500px -3750px ;
+    opacity: 0.8;}
+  100% { background-position: -10000px -5000px;
+    opacity: 0.6;}
+}
+
+.outer-wrapper-backgrounds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -7;
+}
+
+.background-top-left {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  .backgroundStars1 {   
+    animation: spaceForSpaceTopLeft 9325s cubic-bezier(0.25,0.5,0.25,0.5) infinite; // space
+  }
+}
+
+.background-top-right {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .backgroundStars1 {   
+    animation: spaceForSpaceTopRight 9325s cubic-bezier(0.25,0.5,0.25,0.5) infinite; // space
+  }
+}
+
+.background-bottom-right { // same as default
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+}
+
+.background-bottom-left {
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  .backgroundStars1 {   
+    animation: spaceForSpaceBottomLeft 9325s cubic-bezier(0.25,0.5,0.25,0.5) infinite; // space
+  }
+}
+
+//CHANGING FOR EACH SIDE
+@keyframes space {
+  0% { background-position: 0 0;
+    opacity: 0.6;}
+  25% { background-position: -2500px -1250px;
+    opacity: 0.8;}
+  50% { background-position:  -5000px -2500px;
+    opacity: 1;}
+  75% { background-position: -7500px -3750px;
+    opacity: 0.8;}
+  100% { background-position: -10000px -5000px;
+    opacity: 0.6;}
+}
+
+@keyframes spaceForSpaceTopRight {
+  0% { background-position: -1250px -5000px;
+      opacity: 0.6;}
+    25% { background-position: -2500px  -3750px;
       opacity: 0.8;}
     50% { background-position:  -5000px -2500px;
-    opacity: 1;}
-    75% { background-position: -7500px -3750px ;
+      opacity: 1;}
+    75% { background-position:  -7500px -1250px;
       opacity: 0.8;}
-    100% { background-position: -10000px -5000px;
-        opacity: 0.6;}
+    100% { background-position: -10000px -600px;
+      opacity: 0.6;}
 }
+
+@keyframes spaceForSpaceTopLeft {
+  0% { background-position: -10000px -5000px;
+    opacity: 0.6;}
+  25% { background-position: -7500px -3750px ;
+    opacity: 0.8;}
+  50% { background-position:  -5000px -2500px;
+    opacity: 1;}
+  75% { background-position: -2500px -1250px ;
+    opacity: 0.8;}
+  100% { background-position: -1250px -600px;
+    opacity: 0.6;}
+}
+
+@keyframes spaceForSpaceBottomLeft {
+  0% { background-position: -10000px 0;
+    opacity: 0.6;}
+  25% { background-position: -7500px -1250px ;
+    opacity: 0.8;}
+  50% { background-position:  -5000px -2500px;
+    opacity: 1;}
+  75% { background-position:  -2500px  -3750px;
+    opacity: 0.8;}
+  100% { background-position: 0 -5000px;
+    opacity: 0.6;}
+}
+
+
+
+
+
