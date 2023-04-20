@@ -20,8 +20,10 @@ return (
           <img src={project.picture && project.picture} alt="Projects snapshot" />
         </div>
         <div className="wrapper-card-content">
-          {project.githubLink && <a className="link-sources" href={project.githubLink}><i className="fab fa-github"></i> GitHub</a>}
-          {project.deployedLink && <a className="link-sources" href={project.deployedLink}>LIVE</a>}
+          <div className="wrapper-card-buttons">
+            {project.githubLink && <a className="link-sources" href={project.githubLink}><i className="fab fa-github"></i> GitHub</a>}
+            {project.deployedLink && <a className="link-sources" href={project.deployedLink}>LIVE</a>}
+          </div>
           {project.date && <h3>Timeframe</h3>}
           {project.date && <p>{project.longDescription.timeframe}, presentation {project.date}</p>}
           {project.longDescription && <h3>Brief</h3>}

@@ -408,6 +408,22 @@
 .wrapper-content-main-project section h3:nth-of-type(1) {
   margin-top: 24px;
 }
+.wrapper-content-main-project section .wrapper-card-buttons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 906px) {
+  .wrapper-content-main-project section .wrapper-card-buttons {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 906px) {
+  .wrapper-content-main-project section .wrapper-card-buttons a:nth-child(1) {
+    margin-bottom: 16px;
+  }
+}
 
 .wrapper-link {
   margin: 0px auto;
