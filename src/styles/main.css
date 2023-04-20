@@ -264,6 +264,7 @@
   padding: 54px;
   width: clamp(200px, 75vw, 800px);
   border: 1px solid var(--color-border-light-grey);
+  border-radius: var(--border-radius-wrapper);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -288,6 +289,7 @@
      object-fit: cover;
   width: clamp(200px, 30vw, 300px);
   height: auto;
+  border-radius: var(--border-radius-wrapper);
 }
 .wrapper-content-main-projects section:nth-child(even) a {
   flex-direction: row-reverse;
@@ -359,6 +361,7 @@
 .wrapper-content-main-project section {
   margin: 16px auto;
   padding: 54px;
+  padding-bottom: 24px;
   width: clamp(220px, 75vw, 800px);
   border: 1px solid var(--color-border-light-grey);
   display: flex;
@@ -369,6 +372,7 @@
   align-items: center;
   text-decoration: none;
   background-color: var(--color-white);
+  border-radius: var(--border-radius-wrapper);
 }
 .wrapper-content-main-project section div {
   width: clamp(220px, 30vw, 700px);
@@ -380,17 +384,52 @@
      object-fit: cover;
   width: clamp(220px, 30vw, 700px);
   height: auto;
+  border-radius: var(--border-radius-wrapper);
+  margin-bottom: 24px;
 }
 .wrapper-content-main-project section div a {
-  transition: text-shadow, opacity 0.2s 0s linear;
-  padding: 0 8px;
-  font-size: 1.7em;
-  text-shadow: 0 0 0.3em #9b00ed;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: transform, text-shadow, opacity 0.2s 0s linear;
+  padding: 8px 16px;
+  border: 2px solid var(--color-border-button);
+  border-radius: var(--border-radius-wrapper);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
+  background-color: var(--color-white);
 }
 .wrapper-content-main-project section div a:hover {
+  transition: transform, text-shadow, opacity 0.2s 0s linear;
+  background-color: rgba(114, 114, 234, 0.2666666667);
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+.wrapper-content-main-project section h3:nth-of-type(1) {
+  margin-top: 24px;
+}
+
+.wrapper-link {
+  margin: 0px auto;
+  margin-top: 48px;
+}
+.wrapper-link a {
+  margin: 0 1rem;
+  font-size: clamp(17px, 1.5rem, 20px);
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-wrapper);
+  transition: transform, opacity, text-shadow, border 0.2s linear;
+  opacity: 0.7;
+  padding: 8px;
+}
+.wrapper-link a:hover {
   transform: translate(0, -3px);
-  transition: text-shadow, opacity 0.2s 0s linear;
-  text-shadow: 0 0 1em var(--color-hover-blue);
+  transition: opacity, text-shadow 0.2s linear;
+  opacity: 1;
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
+  border: 2px solid var(--color-border-button);
 }
 
 #project-title {
@@ -410,6 +449,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-white);
+  border-radius: var(--border-radius-wrapper);
 }
 @media screen and (max-width: 750px) {
   .wrapper-content-main-about {
@@ -448,7 +488,10 @@ header nav {
 }
 header nav #logo-name {
   margin: 8px;
-  transition: text-shadow 0.2s linear;
+  transition: text-shadow, border 0.2s linear;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-wrapper);
 }
 header nav #logo-name a {
   display: inline-block;
@@ -459,10 +502,10 @@ header nav #logo-name a {
   letter-spacing: 0.25em;
 }
 header nav #logo-name:hover {
-  transform: translate(0, -3px);
-  transition: text-shadow 0.2s linear;
+  transition: text-shadow, border 0.2s linear;
   opacity: 1;
   text-shadow: 0 0 1.3em var(--color-hover-blue);
+  border: 2px solid var(--color-border-button);
 }
 header nav ul {
   display: flex;
@@ -484,14 +527,18 @@ header nav ul li a {
   font-size: clamp(17px, 1.5rem, 20px);
   font-weight: 700;
   text-decoration: none;
-  transition: transform, opacity, text-shadow 0.2s linear;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-wrapper);
+  transition: transform, opacity, text-shadow, border 0.2s linear;
   opacity: 0.7;
+  padding: 8px;
 }
 header nav ul a:hover {
   transform: translate(0, -3px);
   transition: opacity, text-shadow 0.2s linear;
   opacity: 1;
   text-shadow: 0 0 1.3em var(--color-hover-blue);
+  border: 2px solid var(--color-border-button);
 }
 
 footer {
@@ -567,7 +614,9 @@ footer ul li a:hover {
   --color-font-dark: #625a71;
   --color-border-light-grey: rgb(236, 231, 237);
   --color-button-hover-light-blue: #BAC1FF;
-  --color-hover-blue: rgb(114, 114, 234);
+  --color-hover-blue: #7272ea;
+  --color-border-button: rgb(138, 132, 138);
+  --border-radius-wrapper: 4px;
 }
 
 * {

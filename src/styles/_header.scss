@@ -16,7 +16,11 @@ header {
 
     #logo-name{
       margin: 8px;
-      transition: text-shadow 0.2s linear;
+      transition: text-shadow, border 0.2s linear;
+
+      padding: 8px;
+      border: 2px solid transparent;
+      border-radius: var(--border-radius-wrapper);
       
       a {
         display: inline-block;
@@ -28,10 +32,11 @@ header {
       }
     }
     #logo-name:hover {
-      transform: translate(0,-3px);
-      transition: text-shadow 0.2s linear;
+      transition: text-shadow, border 0.2s linear;
       opacity: 1;
       text-shadow: 0 0 1.3em var(--color-hover-blue);
+
+      border: 2px solid var(--color-border-button); 
     }
     
     ul {
@@ -52,14 +57,19 @@ header {
         font-size: clamp(17px, 1.5rem, 20px);
         font-weight: 700;
         text-decoration: none;
-        transition: transform, opacity, text-shadow 0.2s linear;
+        border: 2px solid transparent;
+        border-radius: var(--border-radius-wrapper);
+        transition: transform, opacity, text-shadow, border 0.2s linear;
         opacity: 0.7;
+        padding: 8px;
       }
       a:hover {
         transform: translate(0,-3px);
         transition: opacity, text-shadow 0.2s linear;
         opacity: 1;
         text-shadow:  0 0 1.3em var(--color-hover-blue);
+        border: 2px solid var(--color-border-button); 
+      
       }
     }  
   }
