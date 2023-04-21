@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
-import { H1 } from "../components"
+import { H1 } from "../components";
+import { Diashow } from "../components";
 
 export const Project = ({ myProjects }) => {
  const myId = parseInt(useParams().id);
@@ -16,9 +17,12 @@ return (
     {project.longDescription.title && <h2 id="project-title">Project: {project.longDescription.title}</h2>}      
     <div className="wrapper-content-main-project">
       <section>
-        <div className="wrapper-img">
-          <img src={project.picture && project.picture} alt="Projects snapshot" />
-        </div>
+      <div className="wrapper-img">
+      {project?.gallery ? (< Diashow pictures={project.gallery} />) :  (
+          <img src={project.picture && project.picture} alt="Projects snapshot" />)}
+      </div>
+       
+       
         <div className="wrapper-card-content">
           <div className="wrapper-card-buttons">
             {project.githubLink && <a className="link-sources" href={project.githubLink}><i className="fab fa-github"></i> GitHub</a>}
