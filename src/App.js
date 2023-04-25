@@ -2,14 +2,32 @@ import { useEffect } from "react";
 import { AiOutlineHtml5 as Html5Icon } from "react-icons/ai";
 import {  DiReact as ReactIcon, DiSass as SassIcon } from "react-icons/di"; // DiCss3 as CssIcon,
 import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
-import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon} from "react-icons/si"; // , SiRedux as ReduxIcon 
-// import { FaAws as AWSIcon } from "react-icons/fa";
+import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon, SiRedux as ReduxIcon} from "react-icons/si";
+import { FaAws as AWSIcon } from "react-icons/fa";
 import { Router } from "./Router"
 import { Header, Footer, Backgrounds } from "./components/index"
 
 export function App() {
 
   const myProjects = [
+    {
+      id : 12,
+      title : "POMODORO MYTHOS MEGACORP",
+      date : "2023.03",
+      shortDescription : "Own app for the internhsip: A highly customizable pomodoro",
+      longDescription : {
+        title: "Pomodoro Mythos Megacorp",
+        brief: "The vision of the product is a highly customizable, mindful pomodoro timer with the possibility to extend the product with a wide array of features and customisation points.",
+        timeframe: "6 months",
+        description: "I conducted research to determine the best technologies to use for my project. After considering several options, I decided to use React because it offered a component-based approach and single-page application architecture, which would be suitable for the high level of customization required for the project. I also chose Redux toolkit to manage the global state of my application, given the numerous settings that customers could choose from, and the data needed to be accessible across all platforms and devices. I developed two prototypes to test the feasibility of my idea, get feedback from my mentor and think about the architecture. As database for the userdata I decided to use Firestore where I then also easily could use Firebase auth for my app. The idea about different, soothing and mindful background-images for the app let me to explore more databases and in the end I decided to use AWS S3 Bucket to store the files. When then building the MVP I used test-driven development (TDD) to ensure the code was predictable, and I selected React-testing-library with Jest as the testing framework.",
+        learnings: "Working with prototyping, Redux Toolkit, Firebase (Firestore, Auth and Hosting), AWS S3 Buckets and TDD. Working with a designer and productowner and otherwise deciding on my own."
+      },
+      toolsIcons : [<FirebaseIcon key="firebase"/>, <SassIcon key="sass"/>, <ReactIcon key="react>"/>, <ReduxIcon key="redux" />, <AWSIcon key="aws"/>],
+      deployedLink : "https://pomodoro-mythos-megacorp.web.app/",
+      githubLink : "",
+      picture : "/MythosMegacorp_darkmode_Clockfaces.png",
+      gallery : ["/MythosMegacorp_darkmode_Clockfaces.png", "/MythosMegacorp_darkmode_ClockfacesColors.png", "/MythosMegacorp_darkmode_FlowClockface.png", "/MythosMegacorp_lightmode_ClassicClockface.png"]
+    },
     {
       id : 8,
       title : "E-COMMERCE",
