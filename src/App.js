@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { AiOutlineHtml5 as Html5Icon } from "react-icons/ai";
 import {  DiReact as ReactIcon, DiSass as SassIcon } from "react-icons/di"; // DiCss3 as CssIcon,
 import { IoLogoJavascript as JavascriptIcon } from "react-icons/io";
-import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon, } from "react-icons/si"; // SiRedux as ReduxIcon
+import { SiMongodb as MongodbIcon, SiFirebase as FirebaseIcon} from "react-icons/si"; // , SiRedux as ReduxIcon 
 // import { FaAws as AWSIcon } from "react-icons/fa";
 import { Router } from "./Router"
 import { Header, Footer, Backgrounds } from "./components/index"
@@ -10,7 +10,6 @@ import { Header, Footer, Backgrounds } from "./components/index"
 export function App() {
 
   const myProjects = [
-    
     {
       id : 8,
       title : "E-COMMERCE",
@@ -60,7 +59,19 @@ export function App() {
       toolsIcons : [<JavascriptIcon key="js"/>, <FirebaseIcon key="firebase"/>, <i key="node" className="fa-brands fa-node-js"></i>],
       deployedLink : "",
       githubLink : "https://github.com/iwanast/FishGame",
-      picture : "/fishgame.png"
+      picture : "/fishgame.png",
+      gallery : [
+        "/fishgame.png", 
+        "/fishgame_username.png", 
+        "/fishgame_helloSophieplay.png", 
+        "/fishgame_play.png", 
+        "/fishgame_play_youcandothis.png", 
+        "/fishgame_play_eat.png", 
+        "/fishgame_play_shark.png", 
+        "/fishgame2.png", 
+        "/fishgame_scorehigh_sophie.png", 
+        "/fishgame_won.png"
+      ]
     },
     {
       id : 3,
