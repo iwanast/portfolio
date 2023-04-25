@@ -17,12 +17,10 @@ return (
     {project.longDescription.title && <h2 id="project-title">Project: {project.longDescription.title}</h2>}      
     <div className="wrapper-content-main-project">
       <section>
-      <div className="wrapper-img">
+      <div className={project.gallery ? "wrapper-img gallery-margin" : "wrapper-img"}>
       {project?.gallery ? (< Diashow pictures={project.gallery} />) :  (
           <img src={project.picture && project.picture} alt="Projects snapshot" />)}
       </div>
-       
-       
         <div className="wrapper-card-content">
           <div className="wrapper-card-buttons">
             {project.githubLink && <a className="link-sources" href={project.githubLink}><i className="fab fa-github"></i> GitHub</a>}

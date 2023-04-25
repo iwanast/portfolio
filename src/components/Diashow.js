@@ -21,6 +21,9 @@ export const Diashow = ( { pictures } ) => {
         next
         <div className="arrow-divs next-arrow-div"></div>
       </button>
+      <div className="wrapper-circles-diashow">
+        {pictures.map((_, i) => (<circle className={pictureNumber === i ? `circle-selected` : ""} name={`circle${i}`} ></circle>))}
+      </div>
     </>
   )
 }
