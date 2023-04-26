@@ -690,21 +690,25 @@ footer ul li a:hover {
   text-shadow: 0 0 1.3em var(--color-hover-blue);
 }
 @media screen and (max-width: 450px) {
-  footer ul li:nth-child(1) a, footer ul li:nth-child(2) a {
+  footer ul li:nth-child(1) a,
+  footer ul li:nth-child(2) a {
     flex-direction: row;
   }
 }
 
-.footerIcon, .fas {
+.footerIcon,
+.fas {
   font-size: 30px;
   margin: 0 16px;
 }
 @media only screen and (max-width: 400px) {
-  .footerIcon, .fas {
+  .footerIcon,
+  .fas {
     margin: 0 8px;
   }
 }
-.footerIcon span, .fas span {
+.footerIcon span,
+.fas span {
   font-size: 1rem;
 }
 
@@ -723,7 +727,7 @@ footer ul li a:hover {
   --color-white: rgb(250, 250, 250);
   --color-font-dark: #625a71;
   --color-border-light-grey: rgb(236, 231, 237);
-  --color-button-hover-light-blue: #BAC1FF;
+  --color-button-hover-light-blue: #bac1ff;
   --color-hover-blue: #7272ea;
   --color-border-button: rgb(138, 132, 138);
   --border-radius-wrapper: 4px;
@@ -757,12 +761,14 @@ footer ul li a:hover {
   transition: transform 0.5s ease;
   transform: translateY(-10px) rotate(-10deg);
 }
-* h2, * h3 {
+* h2,
+* h3 {
   font-family: "Noctis", sans-serif;
   font-weight: bold;
   margin: 8px auto;
 }
-* p, * a {
+* p,
+* a {
   font-family: "Noctis", sans-serif;
   font-weight: normal;
 }

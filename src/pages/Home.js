@@ -1,20 +1,19 @@
 import { useEffect } from "react";
-import { H1 } from "../components"
-import avatar from "./../assets/images/avatar.png"
+import { H1 } from "../components";
+import avatar from "./../assets/images/avatar.png";
 
 export const Home = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
-  return(
+  return (
     <main>
       <H1 />
       <h2>Me in a nutshell</h2>
       <div className="wrapper-content-main-about">
         <div className="home-wrapper-img">
-          <img src={avatar} alt="My avatar"/>
+          <img src={avatar} alt="My avatar" />
         </div>
         <div>
           <h3>Frontend Developer</h3>
@@ -25,4 +24,4 @@ export const Home = () => {
       </div>
     </main>
   );
-}
+};

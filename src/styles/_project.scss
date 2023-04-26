@@ -1,9 +1,8 @@
-.wrapper-content-main-project{
-
+.wrapper-content-main-project {
   section {
     margin: 16px auto;
     padding: 54px;
-    padding-bottom: 24px; 
+    padding-bottom: 24px;
     width: clamp(220px, 75vw, 800px); // TAKE FROM HERE FOR ABOUT AS WELL
     border: 1px solid var(--color-border-light-grey);
     display: flex;
@@ -19,22 +18,22 @@
       width: clamp(220px, 30vw, 700px); // TAKE FROM HERE TO ABOUT AS WELL
       height: auto;
       text-align: center;
-      margin-bottom: 20px; 
+      margin-bottom: 20px;
 
       img {
         object-fit: cover;
         width: clamp(220px, 30vw, 700px);
         height: auto;
         border-radius: var(--border-radius-wrapper);
-        // margin-bottom: 24px; 
+        // margin-bottom: 24px;
       }
 
       a {
-        margin: 0 8px; 
+        margin: 0 8px;
         text-decoration: none;
         transition: transform, text-shadow, opacity 0.2s 0s linear;
         padding: 8px 16px;
-        border: 2px solid var(--color-border-button); 
+        border: 2px solid var(--color-border-button);
         border-radius: var(--border-radius-wrapper);
         font-size: 1.5em;
         font-weight: 700;
@@ -47,33 +46,33 @@
         border: 2px solid var(--color-white);
         color: var(--color-white);
       }
-    } 
-    h3:nth-of-type(1){
+    }
+    h3:nth-of-type(1) {
       margin-top: 24px;
-    } 
+    }
     .wrapper-card-buttons {
       display: flex;
       align-content: center;
       justify-content: center;
       flex-wrap: nowrap;
 
-      @media screen and (max-width: 906px){
+      @media screen and (max-width: 906px) {
         flex-direction: column;
         // align-items: center;
       }
       a:nth-child(1) {
-        @media screen and (max-width: 906px){
-          margin-bottom: 16px; 
+        @media screen and (max-width: 906px) {
+          margin-bottom: 16px;
         }
       }
     }
   }
   // For the diashow
   .wrapper-img {
-      position: relative; // for the diashow if project has more than one picture  
+    position: relative; // for the diashow if project has more than one picture
   }
   .gallery-margin {
-    margin-bottom: 54px; 
+    margin-bottom: 54px;
   }
   .diashow-arrows-buttons {
     border: 2px solid transparent;
@@ -89,80 +88,76 @@
       width: 0;
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent;
-      margin: 0 4px; 
+      margin: 0 4px;
     }
-    
   }
- 
 
   .button-previous-arrow {
-    position: absolute; 
-    left: -58px; 
-    bottom: 0;   
+    position: absolute;
+    left: -58px;
+    bottom: 0;
     transform: translate(0, -50%);
     width: auto;
-    padding: 0 4px 0 0; 
+    padding: 0 4px 0 0;
     border-radius: 50% 0 0 50%;
-   
-    @media screen and (max-width: 460px){
-      left: 20px; 
-      bottom: -60px; 
+
+    @media screen and (max-width: 460px) {
+      left: 20px;
+      bottom: -60px;
     }
 
     .previous-arrow-div {
-     border-right: 16px solid var(--color-font-dark);;
+      border-right: 16px solid var(--color-font-dark);
     }
-
   }
   .button-next-arrow {
     position: absolute;
-    right: -58px; 
+    right: -58px;
     bottom: 0;
     transform: translate(0, -50%);
-    padding: 0  0 0 4px; 
-    border-radius: 0 50% 50% 0;  
-    @media screen and (max-width: 460px){
-      right: 20px; 
-      bottom: -60px; 
+    padding: 0 0 0 4px;
+    border-radius: 0 50% 50% 0;
+    @media screen and (max-width: 460px) {
+      right: 20px;
+      bottom: -60px;
     }
 
     .next-arrow-div {
-      border-left: 16px solid var(--color-font-dark);;
+      border-left: 16px solid var(--color-font-dark);
     }
   }
 }
 
 .diashow-arrows-buttons:hover {
   background-color: rgba(255, 255, 255, 0.5);
-  text-shadow:  0 0 1.3em var(--color-hover-blue);
-  border: 2px solid var(--color-border-button); 
-  @media screen and (max-width: 460px){
-    border: 2px solid transparent; 
+  text-shadow: 0 0 1.3em var(--color-hover-blue);
+  border: 2px solid var(--color-border-button);
+  @media screen and (max-width: 460px) {
+    border: 2px solid transparent;
   }
   .previous-arrow-div {
-    border-right: 16px solid rgb(14, 6, 167); 
+    border-right: 16px solid rgb(14, 6, 167);
   }
   .next-arrow-div {
-    border-left: 16px solid rgb(14, 6, 167); 
+    border-left: 16px solid rgb(14, 6, 167);
   }
 }
 
 .wrapper-circles-diashow {
   position: absolute;
-  bottom: -30px; 
+  bottom: -30px;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
 
-
   circle {
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    border: 1px solid var(--color-border-button); 
+    border: 1px solid var(--color-border-button);
     padding: 4px;
-    margin: 1px; 
+    margin: 1px;
   }
   .circle-selected {
     background-color: rgba(34, 0, 255, 0.461);
@@ -170,7 +165,7 @@
 }
 
 .wrapper-link {
-  margin: 0px auto; 
+  margin: 0px auto;
   margin-top: 48px;
   a {
     margin: 0 1rem;
@@ -184,11 +179,11 @@
     padding: 8px;
   }
   a:hover {
-    transform: translate(0,-3px);
+    transform: translate(0, -3px);
     transition: opacity, text-shadow 0.2s linear;
     opacity: 1;
-    text-shadow:  0 0 1.3em var(--color-hover-blue);
-    border: 2px solid var(--color-border-button); 
+    text-shadow: 0 0 1.3em var(--color-hover-blue);
+    border: 2px solid var(--color-border-button);
   }
 }
 
@@ -196,5 +191,3 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-
-

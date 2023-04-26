@@ -1,7 +1,5 @@
-
 export const Footer = () => {
-
-  return(
+  return (
     <footer>
       <ul>
         <li>
@@ -12,7 +10,7 @@ export const Footer = () => {
         </li>
         <li>
           <a href="https://www.linkedin.com/in/iwanast/">
-            <i className="fab fa-linkedin footerIcon"></i> 
+            <i className="fab fa-linkedin footerIcon"></i>
             LinkedIn
           </a>
         </li>
@@ -21,8 +19,8 @@ export const Footer = () => {
             <i className="fas fa-envelope"></i>
             iwana.stadeli@hyperisland.se
           </a>
-        </li>   
+        </li>
       </ul>
     </footer>
   );
-}
+};

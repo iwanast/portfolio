@@ -1,9 +1,9 @@
 .wrapper-content-main-about .home-wrapper-img {
   width: clamp(80px, 30vw, 160px); // IF CHANGE; CHANGE AS WELL IN PROJECT
+  height: auto;
+  img {
+    object-fit: cover;
+    width: clamp(80px, 30vw, 160px); // IF CHANGE; CHANGE AS WELL IN PROJECT
     height: auto;
-    img{
-      object-fit: cover;
-      width: clamp(80px, 30vw, 160px); // IF CHANGE; CHANGE AS WELL IN PROJECT
-      height: auto;
-    }
+  }
 }

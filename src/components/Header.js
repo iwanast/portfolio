@@ -1,9 +1,8 @@
-import { Nav } from "./index"
+import { Nav } from "./index";
 export const Header = () => {
-
-  return(
+  return (
     <header>
       <Nav />
     </header>
   );
-}
+};

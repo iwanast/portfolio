@@ -1,4 +1,4 @@
-.wrapper-content-main-projects{
+.wrapper-content-main-projects {
   section {
     transition: text-shadow, opacity 0.2s 0s linear;
     margin-bottom: 200px;
@@ -43,16 +43,16 @@
           border-radius: var(--border-radius-wrapper);
         }
       }
-    } 
+    }
   }
   section:nth-child(even) {
     a {
       flex-direction: row-reverse;
-      @media screen and (max-width: 750px){
+      @media screen and (max-width: 750px) {
         flex-direction: column;
         text-align: center;
       }
-      .wrapper-card-content{
+      .wrapper-card-content {
         text-align: right;
         @media screen and (max-width: 750px) {
           text-align: center;
@@ -60,43 +60,41 @@
       }
     }
   }
-  section:first-child{
+  section:first-child {
     margin-top: 100px;
     @media screen and (max-width: 450px) {
       margin-top: 0;
     }
   }
-  section:hover{
+  section:hover {
     transition: text-shadow, opacity 0.2s 0s linear;
-    transform: translate(0,-3px);
-    box-shadow: 0 0 1em var(--color-hover-blue);     
+    transform: translate(0, -3px);
+    box-shadow: 0 0 1em var(--color-hover-blue);
   }
 }
 
-#project-date{
+#project-date {
   font-style: italic;
   letter-spacing: 0.1em;
   font-size: 0.8em;
   padding-bottom: 8px;
 }
-#projects-icons{
+#projects-icons {
   display: block;
   margin: 12px 0;
 
-
-  svg{
-  width: 2.5em;
-  height: 1.8em;
-  margin-top: 2px;
-  padding: 0 4px;
+  svg {
+    width: 2.5em;
+    height: 1.8em;
+    margin-top: 2px;
+    padding: 0 4px;
   }
-    i.fa-brands{
+  i.fa-brands {
     font-size: 1.7em;
     padding: 0 4px;
-    }
-
+  }
 }
-#after-projects{
+#after-projects {
   height: 35vh;
   @media screen and (max-width: 750px) {
     height: 10vh;
@@ -105,4 +103,3 @@
     height: 80px;
   }
 }
-

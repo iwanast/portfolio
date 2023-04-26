@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
-    font-family: 'Noctis';
-    src: url('./../assets/fonts/Noctis-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Noctis";
+  src: url("./../assets/fonts/Noctis-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Noctis';
-    src: url('./../assets/fonts/Noctis-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Noctis";
+  src: url("./../assets/fonts/Noctis-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Noctis';
-    src: url('./../assets/fonts/Noctis-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Noctis";
+  src: url("./../assets/fonts/Noctis-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'Noctis';
-  src: url('./../assets/fonts/Noctis-Regular.woff') format('woff');
+  font-family: "Noctis";
+  src: url("./../assets/fonts/Noctis-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Noctis';
-  src: url('./../assets/fonts/Noctis-Heavy.woff') format('woff');
+  font-family: "Noctis";
+  src: url("./../assets/fonts/Noctis-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -47,50 +47,51 @@
   --color-white: rgb(250, 250, 250);
   --color-font-dark: #625a71; // #190B36
   --color-border-light-grey: rgb(236, 231, 237); // #DEDDE9
-  --color-button-hover-light-blue: #BAC1FF;
+  --color-button-hover-light-blue: #bac1ff;
   --color-hover-blue: #7272ea;
-  --color-border-button:   rgb(138, 132, 138);  // #7272ea; // #9a00ed1c;
-  --border-radius-wrapper: 4px; 
+  --color-border-button: rgb(138, 132, 138); // #7272ea; // #9a00ed1c;
+  --border-radius-wrapper: 4px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; // Change the font?!? 
+  font-family: "Roboto", sans-serif; // Change the font?!?
   line-height: 1.7;
   color: var(--color-font-dark);
   button {
     cursor: pointer;
   }
-  h1{
+  h1 {
     letter-spacing: 0.2em;
     font-size: clamp(1.5em, 2em, 3em);
-    font-family: 'Noctis', sans-serif;
+    font-family: "Noctis", sans-serif;
     font-weight: 900;
     margin: 8px auto;
   }
 
-  .title-letter{
+  .title-letter {
     display: inline-block;
     font-family: "Noctis";
     transition: transform 1s ease;
     transform: translateY(0px) rotate(0);
-      
   }
-  
-  .title-letter:hover{
+
+  .title-letter:hover {
     transition: transform 0.5s ease;
     transform: translateY(-10px) rotate(-10deg);
   }
 
-  h2, h3 {
-    font-family: 'Noctis', sans-serif;
+  h2,
+  h3 {
+    font-family: "Noctis", sans-serif;
     font-weight: bold;
     margin: 8px auto;
   }
-  p, a {
-    font-family: 'Noctis', sans-serif;
+  p,
+  a {
+    font-family: "Noctis", sans-serif;
     font-weight: normal;
   }
 }
