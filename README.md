@@ -1,4 +1,4 @@
-My portfolio 💜
+<a href="https://iwanas-portfolio.netlify.app/">My portfolio 💜</a>
 
-Last updated april 2023
+Last update May 2023
 
