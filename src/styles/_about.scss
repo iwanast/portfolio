@@ -1,7 +1,7 @@
 .wrapper-content-main-about {
   margin: 16px auto;
   padding: 54px;
-  width: clamp(200px, 75vw, 800px); // IF CHANGED, CHANGE IN PROJECT AS WeLL
+  width: clamp(200px, 75vw, 800px); // IF CHANGED, CHANGE IN PROJECTS AS WeLL
   border: 1px solid var(--color-border-light-grey);
   display: flex;
   flex-direction: row;
@@ -16,11 +16,11 @@
     text-align: center;
   }
   div {
-    width: clamp(220px, 30vw, 300px); // IF CHANGE; CHANGE AS WELL IN PROJECT
+    width: clamp(220px, 30vw, 300px); // IF CHANGE; CHANGE AS WELL IN PROJECTS
     height: auto;
     img {
       object-fit: cover;
-      width: clamp(220px, 25vw, 300px); // IF CHANGE; CHANGE AS WELL IN PROJECT
+      width: clamp(220px, 25vw, 300px); // IF CHANGE; CHANGE AS WELL IN PROJECTS
       height: auto;
     }
   }

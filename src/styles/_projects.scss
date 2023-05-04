@@ -38,7 +38,7 @@
 
         img {
           object-fit: cover;
-          width: clamp(200px, 30vw, 300px);
+          width: clamp(200px, 30vw, 300px); // TAKE FROM HERE TO ABOUT AS WELL
           height: auto;
           border-radius: var(--border-radius-wrapper);
         }
