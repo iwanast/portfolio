@@ -743,6 +743,7 @@ footer ul li a:hover {
 * {
   margin: 0;
   padding: 0;
+  max-width: 100%;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   line-height: 1.7;
@@ -771,7 +772,7 @@ footer ul li a:hover {
 }
 * .title-letter {
   display: inline-block;
-  font-family: "Noctis";
+  font-family: "Noctis", sans-serif;
   transition: transform 1s ease;
   transform: translateY(0px) rotate(0);
 }
@@ -793,18 +794,18 @@ footer ul li a:hover {
 
 body {
   min-height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 
 #root {
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   position: relative;
 }
 
 main {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   padding: 2rem 0 140px;
   display: flex;
   flex-direction: column;
