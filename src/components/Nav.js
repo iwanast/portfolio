@@ -5,7 +5,7 @@ export const Nav = () => {
     <nav>
       <div id="logo-name">
         <Link to="./">
-          IWANA STÄD<span className="title-letter">E</span>LI
+          IWANA <span className="unbreakable">STÄD<span className="title-letter">E</span>LI&nbsp;</span>
         </Link>
       </div>
       <ul>

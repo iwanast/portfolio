@@ -69,15 +69,22 @@
     font-family: "Noctis", sans-serif;
     font-weight: 900;
     margin: 8px auto;
+    word-break: keep-all;
+    @media screen and (max-width: 250px) {
+      font-size: 1.7em;
+    }
   }
-
+  .unbreakable {
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
+  }
   .title-letter {
     display: inline-block;
     font-family: "Noctis";
     transition: transform 1s ease;
     transform: translateY(0px) rotate(0);
   }
-
   .title-letter:hover {
     transition: transform 0.5s ease;
     transform: translateY(-10px) rotate(-10deg);

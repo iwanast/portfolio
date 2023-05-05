@@ -2,26 +2,24 @@ header {
   position: relative;
   padding: 1rem 0rem 0rem 1rem;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
-
+  @media screen and (max-width: 530px) {
+    padding-left: 0;
+  }
   nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100vw;
-    @media screen and (max-width: 608px) {
-      align-content: flex-start;
+    @media screen and (max-width: 530px) {
+      align-content: center;
       flex-direction: column;
     }
-
     #logo-name {
       margin: 8px;
       transition: text-shadow, border 0.2s linear;
-
       padding: 8px;
       border: 2px solid transparent;
       border-radius: var(--border-radius-wrapper);
-
       a {
         display: inline-block;
         text-decoration: none;
@@ -35,22 +33,19 @@ header {
       transition: text-shadow, border 0.2s linear;
       opacity: 1;
       text-shadow: 0 0 1.3em var(--color-hover-blue);
-
       border: 2px solid var(--color-border-button);
     }
-
     ul {
       display: flex;
       justify-content: space-between;
       list-style: none;
       margin: 0 8px;
       align-items: center;
-      @media screen and (max-width: 608px) {
+      @media screen and (max-width: 530px) {
         align-content: flex-start;
         flex-direction: column;
         align-items: flex-start;
       }
-
       li a {
         display: inline-block;
         margin: 0 1rem;
@@ -73,3 +68,4 @@ header {
     }
   }
 }
+// My name see under main.scss h1
