@@ -18,16 +18,16 @@ export function App() {
       title: "POMODORO MYTHOS MEGACORP",
       date: "2023.03",
       shortDescription:
-        "Own app for the internhsip: A highly customizable pomodoro",
+        "Own app for the internship: A highly customizable pomodoro",
       longDescription: {
         title: "Pomodoro Mythos Megacorp",
         brief:
-          "The vision of the product is a highly customizable, mindful pomodoro timer with the possibility to extend the product with a wide array of features and customisation points.",
+          "The vision of the product is a highly customizable, mindful pomodoro timer with the possibility to extend the product with a wide array of features and customization points.",
         timeframe: "6 months",
         description:
           "I conducted research to determine the best technologies to use for my project. After considering several options, I decided to use React because it offered a component-based approach and single-page application architecture, which would be suitable for the high level of customization required for the project. I also chose Redux toolkit to manage the global state of my application, given the numerous settings that customers could choose from, and the data needed to be accessible across all platforms and devices. I developed two prototypes to test the feasibility of my idea, get feedback from my mentor and think about the architecture. As database for the userdata I decided to use Firestore where I then also easily could use Firebase auth for my app. The idea about different, soothing and mindful background-images for the app let me to explore more databases and in the end I decided to use AWS S3 Bucket to store the files. When then building the MVP I used test-driven development (TDD) to ensure the code was predictable, and I selected React-testing-library with Jest as the testing framework.",
         learnings:
-          "Working with prototyping, Redux Toolkit, Firebase (Firestore, Auth and Hosting), AWS S3 Buckets and TDD. Working with a designer and productowner and otherwise deciding on my own.",
+          "Working with prototyping, Redux Toolkit, Firebase (Firestore, Auth and Hosting), AWS S3 Buckets and TDD. Working with a designer and product owner and otherwise deciding on my own.",
       },
       toolsIcons: [
         <FirebaseIcon key="firebase" />,
@@ -58,7 +58,7 @@ export function App() {
           "Create an API with MongoDB and Express for a shopping store online where (1) there is at least one way for customers to interact with their new API, (2) customers should be able to find available products, (3) customers should be able to create a shopping cart, (4) it should be possible to create an order with a shopping cart AND a single item and (5) workers at the store should be able to mark orders as packed and shipped.",
         timeframe: "4 weeks",
         description:
-          "First I decided upon the structur of the database and what would be needed for the project on paper. Then I set-up the basic structure for the shop-app and the backend running on the Server. I implemented the different features step by step and used Hooks such as useState, useEffect, useContext and useReducer for the frontend. I developed a basic REST API for the backend.",
+          "First I decided upon the structure of the database and what would be needed for the project on paper. Then I set-up the basic structure for the shop-app and the backend running on the Server. I implemented the different features step by step and used Hooks such as useState, useEffect, useContext and useReducer for the frontend. I developed a basic REST API for the backend.",
         learnings:
           "Learning data interactions and setting up an API, learning MongoDB and Express and more react.js",
       },
@@ -83,9 +83,9 @@ export function App() {
           "Refactoring the earlier project (which was in JavaScript) with react.js. It should be readable and maintainable. Publish the project.",
         timeframe: "1 week",
         description:
-          "I created a webbpage where all the programs from the swedish radio API (Sveriges Radio API) for children are. You can switch between programes for 3-8 year olds or programs for 9-13 year olds. If you click on a program, all available episodes (max 120) are shown. You then can click on the episode you want to play to get to the audioplayer.",
+          "I created a webpage where all the programs from the swedish radio API (Sveriges Radio API) for children are. You can switch between programs for 3-8 year olds or programs for 9-13 year olds. If you click on a program, all available episodes (max 120) are shown. You then can click on the episode you want to play to get to the audioplayer.",
         learnings:
-          "First I had to learn the basics of react and worked with function components, Hook, react router dom and react player. Then I used create react app to set up the project, included SASS, react-router-dom, react-player and deleted the content under src. I implemented step for step the functions and logic from my previouse project and adapted where needed the fetch for the Sveriges Radio API. Then I published the project to netlify.",
+          "First I had to learn the basics of react and worked with function components, Hook, react router dom and react player. Then I used create react app to set up the project, included SASS, react-router-dom, react-player and deleted the content under src. I implemented step for step the functions and logic from my previous project and adapted where needed the fetch for the Sveriges Radio API. Then I published the project to netlify.",
       },
       toolsIcons: [
         <SassIcon key="sass" />,
@@ -110,7 +110,7 @@ export function App() {
         description:
           "We created a game underwater where a fish eats all the hidden plastics to save his friends. There are sound effects if bumping into other creatures in the sea. The player has to be cautious of the sharks and the time ticking away. We temporarily store the score in SessionStorage to access it from different scenes. The scores from the best 3 players are fetched from Firestore and shown under the current players score. The player gets an encouraging text at the end with a hint to rise to the challenge to get a better score.",
         learnings:
-          "I learned more about JavaScript and time-functions as well as Phaser. I set up the scenes and togheter with Tintin implemented the logic behind the game. We used NodeJs and its packages for the first time. I did save the scores to Firestore and we all learned more about working in branches and Github.",
+          "I learned more about JavaScript and time-functions as well as Phaser. I set up the scenes and together with Tintin implemented the logic behind the game. We used NodeJs and its packages for the first time. I did save the scores to Firestore and we all learned more about working in branches and Github.",
       },
       toolsIcons: [
         <JavascriptIcon key="js" />,
@@ -171,7 +171,7 @@ export function App() {
           "Group project to incorporate the project management tools we've been learning (github, agile, kanban/scrum) to create a web project that incorporates the javascript date function as well as local or session storage.",
         timeframe: "2 weeks",
         description:
-          "The White Rabbit is an interactive reaction speed game, themed around The Matrix, similar in style to other simple games that are often created for use as marketing materials as part of a larger advertising campaign. The game prompts the user to click on a series of small rabbit images that appear in random positions on the creen as fast as they can. At the end of the game, the user will receive a final time (factoring in penalties for misclicking or missing rabbits), as well as an average reaction time along with other statistics from the game. A gif of a Matrix character will also be displayed, depending on the user's final time. Stats are then saved into the local stroage for use in the highscore page, which displays the user's ten best times.",
+          "The White Rabbit is an interactive reaction speed game, themed around The Matrix, similar in style to other simple games that are often created for use as marketing materials as part of a larger advertising campaign. The game prompts the user to click on a series of small rabbit images that appear in random positions on the screen as fast as they can. At the end of the game, the user will receive a final time (factoring in penalties for misclicking or missing rabbits), as well as an average reaction time along with other statistics from the game. A gif of a Matrix character will also be displayed, depending on the user's final time. Stats are then saved into the local storage for use in the highscore page, which displays the user's ten best times.",
         learnings:
           "We used for the first time Github for a group-project with Github-Desktop. We planed everything in Kanban and styled in Trello. I worked mostly with the game-logic like setTimeout, how to appear at random places, how to calculate the time and I worked with localStorage.",
       },
@@ -189,7 +189,7 @@ export function App() {
     //   id : 1,
     //   title : "POMODORO",
     //   date : "2021.09",
-    //   shortDescription : "First project in HyperIsland where we learned the fundamentals and I started to use JavaScript and Sass and deepend my knowledge of HTML.",
+    //   shortDescription : "First project in HyperIsland where we learned the fundamentals and I started to use JavaScript and Sass and deepened my knowledge of HTML.",
     //   longDescription : {
     //     title: "PomoDoro, a timer for focus-time",
     //     brief: "Individual project which should include HTML and CSS (or SASS).",
