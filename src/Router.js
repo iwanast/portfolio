@@ -1,16 +1,16 @@
-import { Route, Routes } from "react-router-dom";
-import { Projects, Project, About, Home } from "./pages/index";
+import { useRoutes } from "react-router-dom";
+import { About, Home, Project, Projects } from "./pages";
+import { PageTransition } from "./components/PageTransition";
+import { myProjects } from "./myProjects";
 
-export const Router = ({ myProjects }) => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects myProjects={myProjects} />} />
-      <Route
-        path="/project/:id"
-        element={<Project myProjects={myProjects} />}
-      />
-      <Route path="/about" element={<About />} />
-    </Routes>
-  );
+const routes = [
+  { path: "/", element: <Home /> },
+  { path: "/projects", element: <Projects myProjects={myProjects} /> },
+  { path: "/project/:id", element: <Project myProjects={myProjects} /> },
+  { path: "/about", element: <About /> },
+];
+
+export const AllRoutes = () => {
+  const element = useRoutes(routes);
+  return <PageTransition>{element}</PageTransition>;
 };
