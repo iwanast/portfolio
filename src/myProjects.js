@@ -32,7 +32,7 @@ export const myProjects = [
       <ReduxIcon key="redux" />,
       <AWSIcon key="aws" />,
     ],
-    deployedLink: "https://pomodoro-mythos-megacorp.web.app/",
+    deployedLink: "", //"https://pomodoro-mythos-megacorp.web.app/",
     githubLink: "",
     picture: "/MythosMegacorp_darkmode_Clockfaces.png",
     gallery: [

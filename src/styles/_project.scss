@@ -3,7 +3,11 @@
     margin: 16px auto;
     padding: 54px;
     padding-bottom: 24px;
-    width: clamp(220px, 75vw, 800px); // CHANGE DIV AND IMG CLAMP AS WELL TO LESSER THAN HERE
+    width: clamp(
+      220px,
+      75vw,
+      800px
+    ); // CHANGE DIV AND IMG CLAMP AS WELL TO LESSER THAN HERE
     border: 1px solid var(--color-border-light-grey);
     display: flex;
     flex-direction: column;
@@ -15,7 +19,11 @@
     background-color: var(--color-white);
     border-radius: var(--border-radius-wrapper);
     div {
-      width: clamp(220px, 60vw, 700px); // should be equal or more than img clamp 
+      width: clamp(
+        220px,
+        60vw,
+        700px
+      ); // should be equal or more than img clamp
       height: auto;
       text-align: center;
       margin-bottom: 20px;
@@ -86,6 +94,7 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.16);
     transition: 0.6s ease;
+    padding: 0 6px;
 
     .arrow-divs {
       height: 0;
@@ -98,11 +107,10 @@
 
   .button-previous-arrow {
     position: absolute;
-    left: -58px;
+    left: -42px;
     bottom: 0;
     transform: translate(0, -50%);
     width: auto;
-    padding: 0 4px 0 0;
     border-radius: 50% 0 0 50%;
 
     @media screen and (max-width: 460px) {
@@ -116,10 +124,9 @@
   }
   .button-next-arrow {
     position: absolute;
-    right: -58px;
+    right: -42px;
     bottom: 0;
     transform: translate(0, -50%);
-    padding: 0 0 0 4px;
     border-radius: 0 50% 50% 0;
     @media screen and (max-width: 460px) {
       right: 20px;

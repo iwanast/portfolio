@@ -20,16 +20,16 @@ export const Diashow = ({ pictures }) => {
         className="diashow-arrows-buttons button-previous-arrow"
         type="button"
         onClick={onClickPrev}
+        aria-label="button to show previous picture in diashow"
       >
         <div className="arrow-divs previous-arrow-div"></div>
-        prev
       </button>
       <button
         className="diashow-arrows-buttons button-next-arrow"
         type="button"
         onClick={onClickNext}
+        aria-label="button to show next picture in diashow"
       >
-        next
         <div className="arrow-divs next-arrow-div"></div>
       </button>
       <div className="wrapper-circles-diashow">
